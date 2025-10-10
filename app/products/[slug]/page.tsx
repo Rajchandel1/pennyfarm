@@ -73,16 +73,16 @@ const productData = {
     // EXACT content from your document
     detailedDescription: `A Loan Against Property (LAP) is a smart way to use your real estate as a collateral to secure funds. The purpose of this type of loan is to give you credit access by pledging your property to a financial institution. The key advantage is that LAP generally offers lower interest rates compared to unsecured loans, thanks to the property serving as security. With various LAP options available, you can choose the one that best fits your needs.
 
-**Key Features of Loan Against Property (LAP)**
+6. Key Features of Loan Against Property (LAP)
 To fully grasp the potential of a Loan Against Property, it is essential to understand its key features. These features determine how the loan functions and what makes it a viable option for many borrowers.
 
-1. **Secured Loan**
+7. Secured Loan
 As the name suggests, LAP is a secured loan, which means that the borrower pledges their property as collateral. This security reduces the lender's risk, which is why LAP often comes with favorable terms for borrowers. The collateral ensures that the lender can recover the loan amount in case the borrower defaults, making LAP an attractive option for financial institutions.
 
-2. **Higher Loan Amounts**
+8. Higher Loan Amounts
 Compared to unsecured loans, LAP offers access to higher loan amounts. Because the loan is backed by property, the lender is more inclined to sanction larger loans. This is beneficial for borrowers who need substantial capital for various purposes, such as funding business expansion, paying for education, or investing in other real estate ventures.
 
-3. **Flexible Usage of Funds**
+9. Flexible Usage of Funds
 One of the main attractions of LAP is the flexibility in how the funds can be used. Borrowers can use the loan for a variety of purposes, such as:
 • Home renovations and repairs
 • Medical emergencies or personal expenses
@@ -91,19 +91,19 @@ One of the main attractions of LAP is the flexibility in how the funds can be us
 • Weddings or other major life events
 This flexibility ensures that borrowers can leverage the loan for both personal and professional financial needs.
 
-4. **Longer Repayment Tenure**
+10. Longer Repayment Tenure
 LAPs typically come with extended repayment periods, often ranging from 5 to 20 years. This long tenure makes the loan more affordable in the long term, as it reduces the burden of high monthly repayments. The extended period allows borrowers to manage their finances more effectively without straining their budgets.
 
-5. **Lower Interest Rates**
+11. Lower Interest Rates
 Since LAP is a secured loan, it generally offers lower interest rates than unsecured loans. This is because the lender is at a reduced risk, with the property serving as collateral. As a result, borrowers save money on interest payments over the life of the loan, making it a more cost-effective borrowing option.
 
-**No Big Charges for Early Payment**
+12. No Big Charges for Early Payment
 If you want to pay-off your LAP early, it won't cost you a lot. While paying off other types of loans might come at an additional charge, there are no charges involved in paying off LAP.
 
-**Easy Loan Approval**
+13. Easy Loan Approval
 NBFCs or banks are happy to give approval for LAP as it's a safe bet for them. So, it's not too hard to get an LAP.
 
-**Easier Monthly Payments**
+14. Easier Monthly Payments
 LAP allows for EMIs which means easy monthly payments. It's like having a lower monthly rent for your loan. But remember, even though it's tempting to choose a longer duration to pay, it's better to pick the shorter duration to reduce your total loan repayment amount.`,
 
     // EXACT FAQs from your document
@@ -203,18 +203,18 @@ LAP allows for EMIs which means easy monthly payments. It's like having a lower 
 
 Now that you are familiar with WCDL, let us take a closer look at its features and advantages:
 
-**Features**
+1. Features
 • Flexibility: WCDL provides flexibility in both repayment and fund utilisation, allowing businesses to address immediate working capital needs efficiently
 • Quick access: Businesses can access funds quickly, enabling them to manage unexpected expenses or cash flow gaps
 • No fixed repayment schedule: Unlike traditional loans, WCDL does not have a fixed repayment schedule. Lenders can demand repayment at any time
 • Interest on utilised amount: Interest is charged only on the amount of funds actually used, meaning businesses only pay interest on the portion they utilise
 • Easy renewal: WCDL facilities can be renewed or extended after repayment, providing continuous access to working capital as needed
 
-**Advantages**
+2. Advantages
 • Enhances cash flow: WCDL helps businesses maintain healthy cash flow by providing immediate access to funds, ensuring smooth day-to-day operations
 • Suitable for short-term needs: Ideal for managing short-term working capital needs, such as dealing with seasonal fluctuations or temporary cash flow gaps
 
-**When Would Taking a Working Capital Demand Loan be a good idea?**
+3. When Would Taking a Working Capital Demand Loan be a good idea?
 WCDLs are ideal debt instruments for businesses facing a lean season. When sales dip or large amounts of receivables remain unpaid, it can severely impact a business's liquidity, especially for growing businesses. A WCDL is a short-term loan that helps meet regular capital needs and maintain operational efficiency. It ensures smooth cash flow for daily expenses, such as raw material purchases, payroll, and supplier payments, while helping maintain healthy liquidity. This makes it an effective short-term solution for businesses experiencing temporary cash shortages.
 
 WCDLs are perfect for replenishing funds in the short term and bridging the gap between inflows and outflows. They are especially useful for businesses with cyclical operations, where demand fluctuates seasonally. During lean periods, WCDLS can cover financial needs, allowing the business to operate at full capacity during peak seasons.
@@ -296,61 +296,32 @@ With a WCDL, the borrower has full control over how the funds are spent. Plus, a
     ],
     detailedDescription: `A bank guarantee acts as a promise from a bank to a beneficiary (usually a seller or creditor) that if the applicant (usually a buyer or borrower) defaults on their obligations, the bank will cover the payment or performance up to a specified amount. It's a risk management tool, ensuring financial commitments are met, even if one party fails.
 
-features:
-1. Financial Assurance: Bank guarantees provide a safety net for beneficiaries, assuring them of payment or performance, even if the applicant defaults.
-2. Third-Party Liability: The issuing bank assumes direct liability to the beneficiary, meaning the bank is obligated to fulfill the guarantee if the applicant fails.
-3. Types of Guarantees: Bank guarantees come in various forms, including:
+1. Features
+• Financial Assurance: Bank guarantees provide a safety net for beneficiaries, assuring them of payment or performance, even if the applicant defaults.
+• Third-Party Liability: The issuing bank assumes direct liability to the beneficiary, meaning the bank is obligated to fulfill the guarantee if the applicant fails.
+• Types of Guarantees: Bank guarantees come in various forms, including:
 • Performance guarantees: Ensure contract obligations are met.
 • Payment guarantees: Secure payment obligations.
 • Advance payment guarantees: Protect advance payments if goods or services are not delivered as agreed.
 • Bid bond guarantees: Secure commitments during tender processes.
-
-4.Validity Period: Guarantees have a specified validity period, after which they expire and become unenforceable.
-5. Claim Process: Beneficiaries must follow specific procedures and provide proper documentation to make a claim on the guarantee.
-6. Independence from Underlying Contract: Bank guarantees are separate from the underlying contract between the applicant and the beneficiary.
-7. Customization: Guarantees can be tailored to the specific needs of the transaction or contract.
-8. Global Acceptance: Bank guarantees are widely recognized, making them suitable for international transactions.
-9. Risk Mitigation: They reduce the risk of non-payment or non-performance for both parties involved in a transaction.
+• Validity Period: Guarantees have a specified validity period, after which they expire and become unenforceable.
+• Claim Process: Beneficiaries must follow specific procedures and provide proper documentation to make a claim on the guarantee.
+• Independence from Underlying Contract: Bank guarantees are separate from the underlying contract between the applicant and the beneficiary.
+• Customization: Guarantees can be tailored to the specific needs of the transaction or contract.
+• Global Acceptance: Bank guarantees are widely recognized, making them suitable for international transactions.
+• Risk Mitigation: They reduce the risk of non-payment or non-performance for both parties involved in a transaction.
 
 Bank guarantees offer several benefits, primarily by mitigating risk and enhancing business credibility. They assure beneficiaries that a bank will cover a payment obligation if the applicant defaults, facilitating smoother transactions, especially in international trade and large projects. For businesses, particularly small and medium-sized enterprises (SMEs), bank guarantees can be crucial for securing contracts and building trust with partners.
-Here's a more detailed breakdown of the benefits:
-1. Reduced Financial Risk:
-For Beneficiaries:
-Bank guarantees act as a safety net, assuring payment or performance even if the other party defaults.
-For Businesses:
-They lower the risk of non-payment, encouraging businesses to extend credit and take on larger projects.
-2. Increased Business Credibility:
-For Businesses:
-A bank guarantee demonstrates financial stability and trustworthiness, making it easier to secure contracts and deals.
-For SMEs:
-It helps level the playing field, allowing smaller businesses to compete with established firms for larger projects.
-3. Facilitated Trade and Investment:
-International Trade:
-Bank guarantees are particularly useful in international transactions, providing assurance to both parties.
-Investment:
-They can encourage investment by reducing the risk associated with business transactions.
-4. Opportunities for Growth:
-Securing Larger Contracts:
-Businesses can use bank guarantees to bid on and secure larger, more complex projects.
-Access to Finance:
-They can help businesses obtain loans or other forms of financing by providing collateral.
-5. Streamlined Transactions:
-Faster Processing:
-Banks often process guarantees relatively quickly, especially with digital solutions like e-BGs.
-Reduced Paperwork:
-Compared to some other financial instruments, bank guarantees may involve less documentation.
-6. Cost-Effectiveness:
-Lower Fees (Compared to Loans):
-Banks may charge lower fees for guarantees than for loans, making them a more affordable option for certain situations.
-Potential for Lower Interest Rates:
-Having a bank guarantee in place can sometimes lead to more favorable interest rates on loans.
-7. Specific Applications:
-Bid Bonds: Guaranteeing the commitment of a bidder in a tendering process.
-Performance Guarantees: Ensuring the completion of a contract as agreed.
-Advance Payment Guarantees: Protecting against loss of advance payments made to a supplier.
-Loan Repayments: Acting as a guarantee for loan repayment to a lender.
-Service Provision: Ensuring payment for services rendered.
-International Trade: Facilitating trade transactions by guaranteeing payment or performance.
+
+2. Benefits
+• Reduced Financial Risk: Bank guarantees act as a safety net, assuring payment or performance even if the other party defaults. They lower the risk of non-payment, encouraging businesses to extend credit and take on larger projects.
+• Increased Business Credibility: A bank guarantee demonstrates financial stability and trustworthiness, making it easier to secure contracts and deals. It helps level the playing field, allowing smaller businesses to compete with established firms for larger projects.
+• Facilitated Trade and Investment: Bank guarantees are particularly useful in international transactions, providing assurance to both parties. They can encourage investment by reducing the risk associated with business transactions.
+• Opportunities for Growth: Businesses can use bank guarantees to bid on and secure larger, more complex projects. They can help businesses obtain loans or other forms of financing by providing collateral.
+• Streamlined Transactions: Banks often process guarantees relatively quickly, especially with digital solutions like e-BGs. Compared to some other financial instruments, bank guarantees may involve less documentation.
+• Cost-Effectiveness: Banks may charge lower fees for guarantees than for loans, making them a more affordable option for certain situations. Having a bank guarantee in place can sometimes lead to more favorable interest rates on loans.
+• Specific Applications: Bid Bonds, Performance Guarantees, Advance Payment Guarantees, Loan Repayments, Service Provision, and International Trade facilitation.
+
 In essence, bank guarantees are powerful tools that can significantly benefit businesses by mitigating risk, boosting credibility, and facilitating various types of transactions.`,
     originalFaqs: [
       {
@@ -547,27 +518,15 @@ LCs can ensure that the correct goods or services are provided and that all regu
     ],
     detailedDescription: `A business loan is a sum of money borrowed by a business from a lender, like a bank or financial institution, to be repaid with interest over a specific period. Business loans offer several advantages, including access to capital for growth, flexibility in repayment options, potential tax benefits, and the ability to retain ownership and control of the business.
 
-Advantages:
-1. Access to Capital for Growth and Expansion:
-• Business loans provide immediate access to funds, enabling companies to invest in growth opportunities, such as expanding operations, purchasing new equipment, or developing new products.
-• This can be crucial for businesses looking to scale and increase their market share.
-2. Managing Cash Flow and Seasonal Fluctuations:
-• Business loans can help businesses manage cash flow, especially during slower periods or when dealing with unexpected expenses.
-• They can also help businesses manage seasonal fluctuations by providing funds to cover inventory or staffing costs during peak seasons.
-3. Funding Strategic Investments:
-• Businesses can use loans to invest in technology, research and development, or marketing initiatives, which can lead to long-term growth and competitive advantages.
-4. Flexibility in Repayment Options:
-• Many lenders offer customizable repayment terms, allowing businesses to choose a plan that aligns with their cash flow and financial situation.
-• This flexibility can help businesses avoid overextending themselves and manage their debt effectively.
-5. Building and Strengthening Credit History:
-• Timely repayment of a business loan can positively impact a business's credit score, making it easier to secure future financing on favorable terms.
-• A good credit history can also open doors to other financial opportunities, such as leasing equipment or securing better insurance rates.
-6. Retaining Ownership and Control:
-• Unlike equity financing, where investors take a stake in the company, business loans allow businesses to maintain full ownership and control, which can be particularly important for entrepreneurs.
-7. Tax Benefits:
-• In many jurisdictions, interest paid on business loans is tax-deductible, which can lower the overall cost of borrowing.
-8. Working Capital Support:
-• Business loans can help businesses manage their working capital, ensuring they have enough cash on hand to cover day-to-day expenses, such as payroll, rent, and inventory.`,
+1. Advantages
+• Access to Capital for Growth and Expansion: Business loans provide immediate access to funds, enabling companies to invest in growth opportunities, such as expanding operations, purchasing new equipment, or developing new products. This can be crucial for businesses looking to scale and increase their market share.
+• Managing Cash Flow and Seasonal Fluctuations: Business loans can help businesses manage cash flow, especially during slower periods or when dealing with unexpected expenses. They can also help businesses manage seasonal fluctuations by providing funds to cover inventory or staffing costs during peak seasons.
+• Funding Strategic Investments: Businesses can use loans to invest in technology, research and development, or marketing initiatives, which can lead to long-term growth and competitive advantages.
+• Flexibility in Repayment Options: Many lenders offer customizable repayment terms, allowing businesses to choose a plan that aligns with their cash flow and financial situation. This flexibility can help businesses avoid overextending themselves and manage their debt effectively.
+• Building and Strengthening Credit History: Timely repayment of a business loan can positively impact a business's credit score, making it easier to secure future financing on favorable terms. A good credit history can also open doors to other financial opportunities, such as leasing equipment or securing better insurance rates.
+• Retaining Ownership and Control: Unlike equity financing, where investors take a stake in the company, business loans allow businesses to maintain full ownership and control, which can be particularly important for entrepreneurs.
+• Tax Benefits: In many jurisdictions, interest paid on business loans is tax-deductible, which can lower the overall cost of borrowing.
+• Working Capital Support: Business loans can help businesses manage their working capital, ensuring they have enough cash on hand to cover day-to-day expenses, such as payroll, rent, and inventory.`,
     originalFaqs: [
       {
         question: "What is the minimum and maximum loan amount for a business loan?",
@@ -657,13 +616,13 @@ FEATURES OF DROPLINE OVERDRAFT
 • It can be availed on a monthly, quarterly or yearly basis.
 • Banks do not levy a yearly renewal charge for a dropline overdraft.
 
-Benefits of Dropline Overdraft
-1. An overdraft is more flexible than a loan because you only borrow what you need, which may make it less expensive.
-2. No monthly repayments like term loans for the facility.
-3. The interest is charged only with the amount used out of the facility.
-4. In most cases, there is no penalty for paying off an overdraft sooner than intended.
-5. Can be operationalized monthly, quarterly, semi-annually, or annually.
-6. A fusion of term loans and overdrafts.`,
+1. Benefits of Dropline Overdraft
+• An overdraft is more flexible than a loan because you only borrow what you need, which may make it less expensive.
+• No monthly repayments like term loans for the facility.
+• The interest is charged only with the amount used out of the facility.
+• In most cases, there is no penalty for paying off an overdraft sooner than intended.
+• Can be operationalized monthly, quarterly, semi-annually, or annually.
+• A fusion of term loans and overdrafts.`,
     originalFaqs: [
       {
         question: "What is a Dropline Overdraft?",
@@ -978,33 +937,21 @@ While there's risk of non-payment, vendors can mitigate this by carefully assess
       "Delivery proofs",
     ],
     detailedDescription: `Factoring limits is a technique used in calculus to evaluate limits of functions, particularly when direct substitution leads to an indeterminate form like 0/0. This method involves factoring the numerator and/or denominator of the function to identify and cancel out common factors, allowing for direct substitution and limit evaluation.
-Key Features:
-• Indeterminate Forms:
-Factoring is crucial when direct substitution (plugging in the value x is approaching) results in expressions like 0/0, indicating an indeterminate form.
-• Factoring and Cancellation:
-The core idea is to factor the numerator and/or denominator of the function. If a common factor exists, it can be cancelled out, simplifying the expression.
-• Simplified Function Property:
-After cancellation, the simplified expression often allows for direct substitution to find the limit. This works because the original and simplified functions are equal everywhere except at the point where the common factor was zero.
-• "Hole" in the Graph:
-Factoring and cancelling out a common factor often reveals a "hole" in the graph of the function at the point where the limit is being evaluated, but the limit itself still exists and can be found by evaluating the simplified expression.
-• Substitution:
-Once simplified, direct substitution of the value x is approaching into the simplified function allows for the limit to be easily calculated.
+1. Key Features
+• Indeterminate Forms: Factoring is crucial when direct substitution (plugging in the value x is approaching) results in expressions like 0/0, indicating an indeterminate form.
+• Factoring and Cancellation: The core idea is to factor the numerator and/or denominator of the function. If a common factor exists, it can be cancelled out, simplifying the expression.
+• Simplified Function Property: After cancellation, the simplified expression often allows for direct substitution to find the limit. This works because the original and simplified functions are equal everywhere except at the point where the common factor was zero.
+• "Hole" in the Graph: Factoring and cancelling out a common factor often reveals a "hole" in the graph of the function at the point where the limit is being evaluated, but the limit itself still exists and can be found by evaluating the simplified expression.
+• Substitution: Once simplified, direct substitution of the value x is approaching into the simplified function allows for the limit to be easily calculated.
 
-Advantages of Factoring:
-• Improved Cash Flow:
-Factoring provides immediate cash, which can be crucial for businesses needing to meet payroll, pay suppliers, or fund other immediate expenses.
-• Reduced Administrative Burden:
-By outsourcing invoice collection, businesses can focus on core operations and growth rather than chasing payments.
-• Access to Finance for Startups and Businesses with Bad Credit:
-Factoring can be an option for businesses that may not qualify for traditional financing.
-• Potential for Bad Debt Evasion:
-In "without recourse" factoring, the factor assumes the risk of non-payment by the customer.
-• Quick Finance Arrangement:
-Factoring can be a faster way to secure funding compared to bank loans.
-• No Requirement for Security:
-Advances are typically based on the creditworthiness of the receivables, not the business's assets.
-• Focus on Core Business:
-By outsourcing collections, businesses can dedicate more time and resources to their primary operations and growth.`,
+2. Advantages of Factoring
+• Improved Cash Flow: Factoring provides immediate cash, which can be crucial for businesses needing to meet payroll, pay suppliers, or fund other immediate expenses.
+• Reduced Administrative Burden: By outsourcing invoice collection, businesses can focus on core operations and growth rather than chasing payments.
+• Access to Finance for Startups and Businesses with Bad Credit: Factoring can be an option for businesses that may not qualify for traditional financing.
+• Potential for Bad Debt Evasion: In "without recourse" factoring, the factor assumes the risk of non-payment by the customer.
+• Quick Finance Arrangement: Factoring can be a faster way to secure funding compared to bank loans.
+• No Requirement for Security: Advances are typically based on the creditworthiness of the receivables, not the business's assets.
+• Focus on Core Business: By outsourcing collections, businesses can dedicate more time and resources to their primary operations and growth.`,
     originalFaqs: [
       {
         question: "What is factoring?",
@@ -1085,29 +1032,29 @@ By outsourcing collections, businesses can dedicate more time and resources to t
     ],
     detailedDescription: `A Personal Loan is an unsecured loan offered to individuals to meet various personal financial needs. It requires no collateral and is ideal for expenses like weddings, travel, medical emergencies, or home renovation. The loan is repaid in fixed EMIs over a flexible tenure, typically ranging from 1 to 5 years. Approval is based on income, credit score, and repayment capacity. With minimal documentation and quick disbursal, it's a convenient short-term borrowing option.
 
-Key Features of a Personal Loan:
-1. Unsecured Loan – No need to pledge assets.
-2. Fixed Tenure – Usually 1 to 5 years.
-3. Loan Amount Flexibility – Ranges from ₹50,000 to ₹50 lakh or more.
-4. EMI-Based Repayment – Monthly installments with fixed or reducing interest.
-5. Digital Application – Can be applied online via website or app.
-6. Credit Score-Based Approval – Heavily dependent on CIBIL or other scores.
-7. Interest Rate Range – Typically 10% to 24% p.a. based on profile.
-8. Pre-closure Option – Can repay before tenure with/without charges.
-9. Top-up Facility – Option to borrow more on an existing personal loan.
-10. Balance Transfer Facility – Switch to another lender for better rates.
+1. Key Features of a Personal Loan
+• Unsecured Loan – No need to pledge assets.
+• Fixed Tenure – Usually 1 to 5 years.
+• Loan Amount Flexibility – Ranges from ₹50,000 to ₹50 lakh or more.
+• EMI-Based Repayment – Monthly installments with fixed or reducing interest.
+• Digital Application – Can be applied online via website or app.
+• Credit Score-Based Approval – Heavily dependent on CIBIL or other scores.
+• Interest Rate Range – Typically 10% to 24% p.a. based on profile.
+• Pre-closure Option – Can repay before tenure with/without charges.
+• Top-up Facility – Option to borrow more on an existing personal loan.
+• Balance Transfer Facility – Switch to another lender for better rates.
 
-Advantages of a Personal Loan:
-1. No Asset Risk – You don't risk losing property or valuables.
-2. Quick Access to Funds – Useful during emergencies or urgent needs.
-3. Freedom of Use – Spend the amount however you want.
-4. Budget-Friendly EMIs – Fixed repayment helps manage finances easily.
-5. No Need for Guarantor – Standalone eligibility based on your profile.
-6. Builds Credit History – Improves your score if repaid on time.
-7. No End-Use Restriction – Use for marriage, travel, education, etc.
-8. Easy Processing – Especially if you are an existing customer.
-9. Multiple Lender Options – More choices mean better terms for you.
-10. Helps Consolidate Debt – Can be used to pay off costlier credit card or loan debts.`,
+2. Advantages of a Personal Loan
+• No Asset Risk – You don't risk losing property or valuables.
+• Quick Access to Funds – Useful during emergencies or urgent needs.
+• Freedom of Use – Spend the amount however you want.
+• Budget-Friendly EMIs – Fixed repayment helps manage finances easily.
+• No Need for Guarantor – Standalone eligibility based on your profile.
+• Builds Credit History – Improves your score if repaid on time.
+• No End-Use Restriction – Use for marriage, travel, education, etc.
+• Easy Processing – Especially if you are an existing customer.
+• Multiple Lender Options – More choices mean better terms for you.
+• Helps Consolidate Debt – Can be used to pay off costlier credit card or loan debts.`,
     originalFaqs: [
       {
         question: "What is the minimum and maximum amount I can borrow?",
@@ -1186,33 +1133,33 @@ Advantages of a Personal Loan:
     detailedDescription: `Buying a house is one of the biggest dreams come true for most people and an extravagant affair altogether. Imparting life to such a dream requires a lot of effort from the buyers' end and the best one can do to accommodate the home in their budget is through a home loan.
 A home loan can be opted to buy a new house/flat or a plot of land where you construct the house, and even for renovation, extension, and repairs to an existing house.
 
-**Types of Home Loans in India**
+1. Types of Home Loans in India
 
-• **Home Loan** - This is the most common type of home loan availed to purchase a house. There are many housing finance companies, public banks, and private banks that offer housing loans where you borrow money to purchase the house of your choice and repay the loan in monthly instalments. You can get up to 80%-90% of the house's market price in the form of financing. The lender will hold the house until you completely repay the loan.
+• Home Loan - This is the most common type of home loan availed to purchase a house. There are many housing finance companies, public banks, and private banks that offer housing loans where you borrow money to purchase the house of your choice and repay the loan in monthly instalments. You can get up to 80%-90% of the house's market price in the form of financing. The lender will hold the house until you completely repay the loan.
 
-• **Home Construction Loan** - This is the right home loan type if you already have a plot of land and you need financing to construct a house in that land.
+• Home Construction Loan - This is the right home loan type if you already have a plot of land and you need financing to construct a house in that land.
 
-• **Home Extension Loan** - Say you already own a house and you would like to extend the house with another room or another floor to accommodate the growing family. Home extension loan provides financing for this purpose.
+• Home Extension Loan - Say you already own a house and you would like to extend the house with another room or another floor to accommodate the growing family. Home extension loan provides financing for this purpose.
 
-• **Home Improvement Loan** - A home improvement loan provides financing for renovating or repairing the house if there's any fault in the existing system, such as painting the house's interior or exterior, plumbing, upgrading the electrical system, waterproofing the ceiling, and more.
+• Home Improvement Loan - A home improvement loan provides financing for renovating or repairing the house if there's any fault in the existing system, such as painting the house's interior or exterior, plumbing, upgrading the electrical system, waterproofing the ceiling, and more.
 
-• **Home Loan Balance Transfer** - The current home loan interest rate may be overwhelming, or you may not be happy with your current lender's service; you can transfer the home loan's outstanding balance to a different lender who offers a lower interest rate and better service. Upon transfer, you can even check out the possibilities of a top-up loan on your existing one.
+• Home Loan Balance Transfer - The current home loan interest rate may be overwhelming, or you may not be happy with your current lender's service; you can transfer the home loan's outstanding balance to a different lender who offers a lower interest rate and better service. Upon transfer, you can even check out the possibilities of a top-up loan on your existing one.
 
-• **Composite Home Loan** - This type of home loan provides financing for purchasing the plot of land where you would like to construct a house and for the construction, both within a single loan.
+• Composite Home Loan - This type of home loan provides financing for purchasing the plot of land where you would like to construct a house and for the construction, both within a single loan.
 
-**Benefits of Taking a Home Loan**
+2. Benefits of Taking a Home Loan
 
-• **Tax Benefits** - The foremost benefit of a home loan is the income tax deduction you can claim on the interest and principal repayments. You can claim up to Rs.1.5 lakh on principal repayments u/s 80C, up to Rs.2 lakh on interest repayments u/s 24B, up to Rs.2 lakh on interest repayment in special circumstances u/s 80EE and 80EEA, and up to Rs.1.5 lakh on stamp duty expenses u/s 80C.
+• Tax Benefits - The foremost benefit of a home loan is the income tax deduction you can claim on the interest and principal repayments. You can claim up to Rs.1.5 lakh on principal repayments u/s 80C, up to Rs.2 lakh on interest repayments u/s 24B, up to Rs.2 lakh on interest repayment in special circumstances u/s 80EE and 80EEA, and up to Rs.1.5 lakh on stamp duty expenses u/s 80C.
 
-• **Lower Interest Rate** - The home loan interest rate is much lower as compared to any other loan types available. If you come across a cash crunch, you may get a top-up on the existing home loan at a lower interest rate than a personal loan to solve the issue.
+• Lower Interest Rate - The home loan interest rate is much lower as compared to any other loan types available. If you come across a cash crunch, you may get a top-up on the existing home loan at a lower interest rate than a personal loan to solve the issue.
 
-• **Due Diligence of Property** - When you go through a bank to purchase a house, the bank will conduct thorough checks on the property from the legal perspective and check if all the documents produced are valid. This due diligence check from the bank's end will reduce the risk of you being scammed. If the bank approves the property, that means you and your house are safe.
+• Due Diligence of Property - When you go through a bank to purchase a house, the bank will conduct thorough checks on the property from the legal perspective and check if all the documents produced are valid. This due diligence check from the bank's end will reduce the risk of you being scammed. If the bank approves the property, that means you and your house are safe.
 
-• **Long Repayment Tenure** - Unlike any other loans, home loans come with longer repayment tenure, as much as 25-30 years. This is owing to the significant loan amount one will have to borrow to purchase a house. Spreading the loan amount and interest applicable over a longer tenure will reduce the monthly EMIs reducing the borrower's burden.
+• Long Repayment Tenure - Unlike any other loans, home loans come with longer repayment tenure, as much as 25-30 years. This is owing to the significant loan amount one will have to borrow to purchase a house. Spreading the loan amount and interest applicable over a longer tenure will reduce the monthly EMIs reducing the borrower's burden.
 
-• **No Prepayment Penalty** - When you take a floating-rate home loan, you can make prepayments towards the loan whenever you have a lump sum at hand without having to pay any prepayment penalty. This will help you close the home loan much before the set loan tenure.
+• No Prepayment Penalty - When you take a floating-rate home loan, you can make prepayments towards the loan whenever you have a lump sum at hand without having to pay any prepayment penalty. This will help you close the home loan much before the set loan tenure.
 
-• **Balance Transfer Facility** - You can transfer the home loan from one lender to another for several reasons, such as the interest rate, service charges, customer service experience, and others.`,
+• Balance Transfer Facility - You can transfer the home loan from one lender to another for several reasons, such as the interest rate, service charges, customer service experience, and others.`,
     originalFaqs: [
       {
         question: "What is the maximum loan amount I can get?",
@@ -1454,43 +1401,41 @@ export default function ProductDetailPage() {
   // Function to format the detailed description
   const renderDetailedDescription = (text: string) => {
     return text.split('\n\n').map((paragraph, index) => {
-      // Check if it's a heading
-      if (paragraph.startsWith('**') && paragraph.endsWith('**')) {
+      // Check if it's a numbered heading (main point)
+      if (/^\d+\.\s/.test(paragraph)) {
+        const lines = paragraph.split('\n')
+        const mainHeading = lines[0].replace(/^\d+\.\s*/, '')
+        const subContent = lines.slice(1)
+        
         return (
-          <h3 key={index} className="text-2xl font-semibold mt-8 mb-4 text-foreground">
-            {paragraph.replace(/\*\*/g, '')}
-          </h3>
+          <div key={index} className="mb-6">
+            <h3 className="text-xl font-semibold mt-8 mb-4 text-foreground">
+              {mainHeading}
+            </h3>
+            {subContent.length > 0 && (
+              <div className="ml-4">
+                {subContent.map((line, idx) => {
+                  if (line.startsWith('• ')) {
+                    return (
+                      <ul key={idx} className="list-disc list-inside ml-6 mb-2">
+                        <li className="text-muted-foreground">{line.replace('• ', '')}</li>
+                      </ul>
+                    )
+                  } else if (line.trim()) {
+                    return (
+                      <p key={idx} className="text-muted-foreground mb-2 leading-relaxed">
+                        {line}
+                      </p>
+                    )
+                  }
+                  return null
+                })}
+              </div>
+            )}
+          </div>
         )
       }
-      // Standalone numbered paragraph → bullet item
-      else if (/^\d+\./.test(paragraph)) {
-        const parts = paragraph.split('\n')
-        const mainHeading = parts[0].replace(/^\d+\.\s*/, '')
-        const subContent = parts.slice(1)
-        return (
-          <ul key={index} className="list-disc list-inside ml-6 mb-2">
-            <li>
-              <span className="font-medium">{mainHeading}</span>
-              {subContent.length > 0 && (
-                <div className="mt-1 ml-4">
-                  {subContent.map((line, idx) =>
-                    line.startsWith('• ')
-                      ? (
-                        <ul key={idx} className="list-disc list-inside ml-6 mb-1">
-                          <li>{line.replace('• ', '')}</li>
-                        </ul>
-                        )
-                      : (
-                        <p key={idx} className="text-muted-foreground mb-1">{line}</p>
-                        )
-                  )}
-                </div>
-              )}
-            </li>
-          </ul>
-        )
-      }
-      // Check if it's a bullet list
+      // Check if it's a bullet list section
       else if (paragraph.includes('\n• ')) {
         const lines = paragraph.split('\n')
         const title = lines[0]
@@ -1502,24 +1447,6 @@ export default function ProductDetailPage() {
               {items.map((item, idx) => (
                 <li key={idx} className="text-muted-foreground">{item.replace('• ', '')}</li>
               ))}
-            </ul>
-          </div>
-        )
-      }
-      // Paragraph with numbered lines → bullet list
-      else if (/\n\d+\./.test(paragraph)) {
-        const lines = paragraph.split('\n')
-        const title = lines[0]
-        const items = lines.slice(1)
-        return (
-          <div key={index} className="mb-6">
-            <p className="font-medium mb-2 text-foreground">{title}</p>
-            <ul className="list-disc list-inside ml-6 space-y-1">
-              {items
-                .filter((l) => /^\d+\./.test(l))
-                .map((l, idx) => (
-                  <li key={idx} className="text-muted-foreground">{l.replace(/^\d+\.\s*/, '')}</li>
-                ))}
             </ul>
           </div>
         )

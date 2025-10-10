@@ -176,8 +176,8 @@ export default function AboutPage() {
               📍 623, Dev Atelier, 100 Feet Anand Nagar Rd, Prahlad Nagar, Ahmedabad, Gujarat 380015
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button 
-                size="lg" 
+              <Button
+                size="lg"
                 className="bg-primary hover:bg-primary/90 text-primary-foreground"
                 onClick={() => window.open('tel:+919664982919', '_self')}
               >

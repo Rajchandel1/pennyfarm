@@ -43,9 +43,7 @@ const Header = () => {
     }
   }
 
-  
   const { emi, totalInterest, totalAmount } = calculateEMI();
-  
 
   const scrollToContact = () => {
     window.location.href = "/#contact-section"
@@ -86,7 +84,7 @@ const Header = () => {
                 href="/about"
                 className="text-foreground hover:text-primary transition-colors"
               >
-                About us  
+                About us
               </Link>
               <Link
                 href="/products"

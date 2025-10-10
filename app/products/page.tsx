@@ -26,6 +26,66 @@ import Link from "next/link"
 
 const products = [
   {
+    id: "dropline-overdraft",
+    title: "Dropline Overdraft",
+    description: "Combination of overdraft and term loan with reducing withdrawal limits over time.",
+    icon: Calculator,
+    features: [
+      "Withdrawal Limit Reduces Monthly",
+      "Secured or Unsecured Options",
+      "Interest on Daily Basis",
+      "One-time Processing Fee",
+      "No Monthly Repayments",
+      "Flexible Operationalization",
+      "No Yearly Renewal Charge",
+    ],
+    rate: "10.5% onwards",
+    amount: "Up to ₹1 Cr",
+    tenure: "Up to 5 years",
+    processing: "1% to 2%",
+    category: "Business Finance",
+  },
+  {
+    id: "vendor-financing",
+    title: "Vendor Financing",
+    description: "Direct financing from sellers to facilitate purchases with flexible payment terms.",
+    icon: Building,
+    features: [
+      "Direct Financing from Vendor",
+      "Deferred Payment Options",
+      "Interest Charges Apply",
+      "Collateral May Be Required",
+      "Short-Term Working Capital",
+      "Flexible Terms",
+      "Streamlined Process",
+    ],
+    rate: "11.5% onwards",
+    amount: "Up to ₹2 Cr",
+    tenure: "Up to 2 years",
+    processing: "1% to 2%",
+    category: "Trade Finance",
+  },
+  {
+    id: "factoring-limit",
+    title: "Factoring Limit",
+    description: "Convert your receivables into immediate cash with our factoring services.",
+    icon: CreditCard,
+    features: [
+      "Improved Cash Flow",
+      "Reduced Administrative Burden",
+      "Access to Finance",
+      "Bad Debt Protection",
+      "Quick Finance Arrangement",
+      "No Security Required",
+      "Focus on Core Business",
+    ],
+    rate: "12.5% onwards",
+    amount: "Up to ₹5 Cr",
+    tenure: "As per invoice terms",
+    processing: "1% to 2.5%",
+    category: "Invoice Finance",
+  },
+  {
     id: "loan-against-property",
     title: "Loan Against Property",
     description:
@@ -132,26 +192,6 @@ const products = [
     popular: true,
   },
   {
-    id: "dropline-overdraft",
-    title: "Dropline Overdraft",
-    description: "Combination of overdraft and term loan with reducing withdrawal limits over time.",
-    icon: Calculator,
-    features: [
-      "Withdrawal Limit Reduces Monthly",
-      "Secured or Unsecured Options",
-      "Interest on Daily Basis",
-      "One-time Processing Fee",
-      "No Monthly Repayments",
-      "Flexible Operationalization",
-      "No Yearly Renewal Charge",
-    ],
-    rate: "10.5% onwards",
-    amount: "Up to ₹1 Cr",
-    tenure: "Up to 5 years",
-    processing: "1% to 2%",
-    category: "Business Finance",
-  },
-  {
     id: "supply-chain-finance",
     title: "Supply Chain Finance",
     description: "Optimize cash flow across your supply chain with early payment solutions for suppliers.",
@@ -170,46 +210,6 @@ const products = [
     tenure: "As per supply cycle",
     processing: "0.5% to 1.5%",
     category: "Supply Chain",
-  },
-  {
-    id: "vendor-financing",
-    title: "Vendor Financing",
-    description: "Direct financing from sellers to facilitate purchases with flexible payment terms.",
-    icon: Building,
-    features: [
-      "Direct Financing from Vendor",
-      "Deferred Payment Options",
-      "Interest Charges Apply",
-      "Collateral May Be Required",
-      "Short-Term Working Capital",
-      "Flexible Terms",
-      "Streamlined Process",
-    ],
-    rate: "11.5% onwards",
-    amount: "Up to ₹2 Cr",
-    tenure: "Up to 2 years",
-    processing: "1% to 2%",
-    category: "Trade Finance",
-  },
-  {
-    id: "factoring-limit",
-    title: "Factoring Limit",
-    description: "Convert your receivables into immediate cash with our factoring services.",
-    icon: CreditCard,
-    features: [
-      "Improved Cash Flow",
-      "Reduced Administrative Burden",
-      "Access to Finance",
-      "Bad Debt Protection",
-      "Quick Finance Arrangement",
-      "No Security Required",
-      "Focus on Core Business",
-    ],
-    rate: "12.5% onwards",
-    amount: "Up to ₹5 Cr",
-    tenure: "As per invoice terms",
-    processing: "1% to 2.5%",
-    category: "Invoice Finance",
   },
   {
     id: "personal-loan",
@@ -359,7 +359,6 @@ export default function ProductsPage() {
                   key={product.id}
                   className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-border/50 hover:border-primary/50 relative"
                 >
-                
                   <CardHeader>
                     <div className="flex items-center justify-between mb-4">
                       <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
@@ -441,8 +440,8 @@ export default function ProductsPage() {
             Our financial experts are here to help you find the perfect loan solution for your needs.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button 
-              size="lg" 
+            <Button
+              size="lg"
               className="bg-primary hover:bg-primary/90 text-primary-foreground"
               onClick={() => window.open('tel:+919664982919', '_self')}
             >

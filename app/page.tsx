@@ -22,6 +22,7 @@ import {
   Home,
   Car,
   Briefcase,
+  Building,
   X,
   Menu,
   ChevronDown,
@@ -57,6 +58,36 @@ const useAOS = () => {
 }
 
 const products = [
+  {
+    id: "dropline-overdraft",
+    title: "Dropline Overdraft",
+    description: "Combination of overdraft and term loan with reducing withdrawal limits over time.",
+    icon: Calculator,
+    features: ["Withdrawal Limit Reduces Monthly", "Secured or Unsecured Options", "Interest on Daily Basis", "No Monthly Repayments"],
+    rate: "10.5% onwards",
+    amount: "Up to ₹1 Cr",
+    tenure: "Up to 5 years",
+  },
+  {
+    id: "vendor-financing",
+    title: "Vendor Financing",
+    description: "Direct financing from sellers to facilitate purchases with flexible payment terms.",
+    icon: Building,
+    features: ["Direct Financing from Vendor", "Deferred Payment Options", "Short-Term Working Capital", "Flexible Terms"],
+    rate: "11.5% onwards",
+    amount: "Up to ₹2 Cr",
+    tenure: "Up to 2 years",
+  },
+  {
+    id: "factoring-limit",
+    title: "Factoring Limit",
+    description: "Convert your receivables into immediate cash with our factoring services.",
+    icon: CreditCard,
+    features: ["Improved Cash Flow", "Reduced Administrative Burden", "Quick Finance Arrangement", "No Security Required"],
+    rate: "12.5% onwards",
+    amount: "Up to ₹5 Cr",
+    tenure: "As per invoice terms",
+  },
   {
     id: "loan-against-property",
     title: "Loan Against Property",
@@ -179,19 +210,19 @@ const blogs = [
 //   { name: "AXIS", src: "/placeholder-logo.png" },
 // ]
 
-const bankLogos = [
-  { name: "BOB", logo: "BOB" },
-  { name: "HDFC", logo: "HDFC" },
-  { name: "ICICI", logo: "ICICI" },
-  { name: "KOTAK", logo: "KOTAK" },
-  { name: "SBI", logo: "SBI" },
-  { name: "AXIS", logo: "AXIS" },
-]
+// const bankLogos = [
+//   { name: "BOB", logo: "BOB" },
+//   { name: "HDFC", logo: "HDFC" },
+//   { name: "ICICI", logo: "ICICI" },
+//   { name: "KOTAK", logo: "KOTAK" },
+//   { name: "SBI", logo: "SBI" },
+//   { name: "AXIS", logo: "AXIS" },
+// ]
 
 export default function HomePage() {
   const [activeTestimonial, setActiveTestimonial] = useState(0)
   const [expandedFAQ, setExpandedFAQ] = useState<number | null>(null)
-  const [currentBankIndex, setCurrentBankIndex] = useState(0)
+  // const [currentBankIndex, setCurrentBankIndex] = useState(0)
   const [showEMICalculator, setShowEMICalculator] = useState(false)
 
   useAOS()
@@ -227,12 +258,6 @@ export default function HomePage() {
     return () => clearInterval(interval)
   }, [])
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentBankIndex((prev) => (prev + 1) % bankLogos.length)
-    }, 2000)
-    return () => clearInterval(interval)
-  }, [])
 
   const scrollToContact = () => {
     const contactSection = document.getElementById("contact-section")
@@ -374,7 +399,7 @@ Penny Farm Finance is your constant companion as you strive to live the best lif
       </section>
 
       {/* Bank Logos Section */}
-      <section className="py-20" data-aos="aos-fade-up">
+      {/* <section className="py-20" data-aos="aos-fade-up">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4">Your Money Concerns are now Completely Resolved.</h2>
@@ -398,7 +423,7 @@ Penny Farm Finance is your constant companion as you strive to live the best lif
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Products Section */}
       <section className="py-20 bg-muted/30" data-aos="aos-fade-up">
@@ -816,8 +841,8 @@ Penny Farm Finance is your constant companion as you strive to live the best lif
                 Your trusted partner for all financial needs. We provide quick, reliable, and affordable loan solutions.
               </p>
               <div className="flex space-x-4">
-                <Button 
-                  size="sm" 
+                <Button
+                  size="sm"
                   className="bg-green-500 hover:bg-green-600"
                   onClick={() => window.open('https://wa.me/919664982919', '_blank')}
                 >
@@ -905,7 +930,6 @@ Penny Farm Finance is your constant companion as you strive to live the best lif
       </footer>
 
       {/* EMI Calculator handled by existing header component */}
-     
     </div>
   )
 }
