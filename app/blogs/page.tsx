@@ -186,7 +186,7 @@ export default function BlogsPage() {
                 variant="outline"
                 className="border-primary text-primary hover:bg-primary hover:text-primary-foreground bg-transparent"
               >
-                Explore Our Products
+                Explore Our Services
                 <ArrowRight className="w-5 h-5 ml-2" />
               </Button>
             </Link>

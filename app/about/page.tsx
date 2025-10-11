@@ -231,7 +231,7 @@ export default function AboutPage() {
                 </li>
                 <li>
                   <Link href="/products" className="hover:text-primary transition-colors">
-                    Products
+                    Services
                   </Link>
                 </li>
               </ul>
