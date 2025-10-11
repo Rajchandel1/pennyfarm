@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import Header from "../../header/page"
+import Footer from "@/app/footer/page"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 import {
   CheckCircle,
@@ -519,7 +520,7 @@ LCs can ensure that the correct goods or services are provided and that all regu
     detailedDescription: `A business loan is a sum of money borrowed by a business from a lender, like a bank or financial institution, to be repaid with interest over a specific period. Business loans offer several advantages, including access to capital for growth, flexibility in repayment options, potential tax benefits, and the ability to retain ownership and control of the business.
 
 1. Advantages
-• Access to Capital for Growth and Expansion: Business loans provide immediate access to funds, enabling companies to invest in growth opportunities, such as expanding operations, purchasing new equipment, or developing new products. This can be crucial for businesses looking to scale and increase their market share.
+• Access to Capital for Growth and Expansion: Business loans provide immediate access to funds, enabling companies to invest in growth opportunities, such as expanding operations, purchasing new equipment, or developing new Services. This can be crucial for businesses looking to scale and increase their market share.
 • Managing Cash Flow and Seasonal Fluctuations: Business loans can help businesses manage cash flow, especially during slower periods or when dealing with unexpected expenses. They can also help businesses manage seasonal fluctuations by providing funds to cover inventory or staffing costs during peak seasons.
 • Funding Strategic Investments: Businesses can use loans to invest in technology, research and development, or marketing initiatives, which can lead to long-term growth and competitive advantages.
 • Flexibility in Repayment Options: Many lenders offer customizable repayment terms, allowing businesses to choose a plan that aligns with their cash flow and financial situation. This flexibility can help businesses avoid overextending themselves and manage their debt effectively.
@@ -854,7 +855,7 @@ Vendor financing can streamline the purchasing process, as it eliminates the nee
 By freeing up capital and providing access to necessary resources, vendor financing can help businesses grow and expand.
 For Vendors:
 • Increased Sales:
-Offering vendor financing can make products or services more attractive and accessible, potentially leading to increased sales volume.
+Offering vendor financing can make Services or services more attractive and accessible, potentially leading to increased sales volume.
 • Competitive Advantage:
 Vendor financing can provide a competitive edge, allowing vendors to stand out from competitors who may not offer financing options.
 • Revenue Generation:
@@ -1373,7 +1374,7 @@ export default function ProductDetailPage() {
         <div className="text-center">
           <h1 className="text-2xl font-bold mb-4">Product Not Found</h1>
           <Link href="/products">
-            <Button>Back to Products</Button>
+            <Button>Back to Services</Button>
           </Link>
         </div>
       </div>
@@ -1667,77 +1668,7 @@ export default function ProductDetailPage() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="bg-foreground text-background py-16">
-        <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-4 gap-8">
-            <div>
-              <div className="flex items-center space-x-2 mb-4">
-                <img
-                  src="/images/pennyfarm-logo.png"
-                  alt="Penny Farm Finance Logo"
-                  className="h-8 w-auto"
-                />
-                <span className="text-xl font-bold">Penny Farm Finance</span>
-              </div>
-              <p className="text-background/70">Your trusted partner for all financial needs.</p>
-            </div>
-            <div>
-              <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
-              <ul className="space-y-2 text-background/70">
-                <li>
-                  <Link href="/" className="hover:text-primary transition-colors">
-                    Home
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/products" className="hover:text-primary transition-colors">
-                    Products
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/about" className="hover:text-primary transition-colors">
-                    About Us
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/contact" className="hover:text-primary transition-colors">
-                    Contact
-                  </Link>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h3 className="text-lg font-semibold mb-4">Products</h3>
-              <ul className="space-y-2 text-background/70">
-                <li>
-                  <Link href="/products/personal-loan" className="hover:text-primary transition-colors">
-                    Personal Loan
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/products/business-loan" className="hover:text-primary transition-colors">
-                    Business Loan
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/products/home-loan" className="hover:text-primary transition-colors">
-                    Home Loan
-                  </Link>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h3 className="text-lg font-semibold mb-4">Contact</h3>
-              <div className="space-y-2 text-background/70">
-                <p>📞 +91 96649 82919</p>
-                <p>✉️ pennyfarmfinance@gmail.com</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
-
+   <Footer />
       {/* EMI Calculator Modal */}
       {showEMICalculator && (
         <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4">
