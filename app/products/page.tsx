@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
-import { Card, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import { Card, CardDescription, CardHeader, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Input } from "@/components/ui/input"
 import Header from "../header/page"
@@ -355,77 +355,39 @@ export default function ProductsPage() {
             {products.map((product, index) => {
               const Icon = product.icon
               return (
-                <Card
-                  key={product.id}
-                  className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-border/50 hover:border-primary/50 relative"
-                >
-                  <CardHeader>
-                    <div className="flex items-center justify-between mb-4">
-                      <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
-                        <Icon className="w-6 h-6" />
-                      </div>
-                      {/* <Badge variant="outline" className="text-xs">
-                        {product.category}
-                      </Badge> */}
-                    </div>
-                    <CardTitle className="text-xl">{product.title}</CardTitle>
-                    <CardDescription className="text-muted-foreground h-20">{product.description}</CardDescription>
-                  </CardHeader>
-                  {/* <CardContent>
-                    <div className="space-y-4">
-                      <div className="grid grid-cols-2 gap-4 text-sm">
-                        <div>
-                          <div className="text-muted-foreground">Interest Rate</div>
-                          <div className="font-semibold text-primary">{product.rate}</div>
-                        </div>
-                        <div>
-                          <div className="text-muted-foreground">Loan Amount</div>
-                          <div className="font-semibold">{product.amount}</div>
-                        </div>
-                        <div>
-                          <div className="text-muted-foreground">Tenure</div>
-                          <div className="font-semibold">{product.tenure}</div>
-                        </div>
-                        <div>
-                          <div className="text-muted-foreground">Processing</div>
-                          <div className="font-semibold">{product.processing}</div>
-                        </div>
-                      </div>
+              <Card
+  key={product.id}
+  className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-border/50 hover:border-primary/50 overflow-hidden relative"
+>
+  <div className="relative h-48 overflow-hidden">
+    <img
+      src={`https://i.pinimg.com/736x/6e/41/96/6e41964d78cdbcef18bad362eb2917da.jpg`} // Aap yahan appropriate image path use karein
+      alt={product.title}
+      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+    />
+    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+    <div className="absolute bottom-4 left-4 right-4">
+      <h3 className="text-xl font-bold text-white">{product.title}</h3>
+    </div>
+  </div>
+  <CardHeader className="pt-4">
+    <CardDescription className="text-muted-foreground">{product.description}</CardDescription>
+  </CardHeader>
+  <CardContent>
+    <div className="space-y-4">
+      
 
-                      <div className="space-y-2">
-                        <div className="text-sm font-medium text-foreground">Key Features:</div>
-                        {product.features.slice(0, 4).map((feature, idx) => (
-                          <div key={idx} className="flex items-center text-sm">
-                            <CheckCircle className="w-4 h-4 text-green-500 mr-2 flex-shrink-0" />
-                            {feature}
-                          </div>
-                        ))}
-                        {product.features.length > 4 && (
-                          <div className="text-sm text-muted-foreground">
-                            +{product.features.length - 4} more features
-                          </div>
-                        )}
-                      </div>
-
-                      <div className="flex gap-2 pt-4">
-                        <Link href={`/products/${product.id}`} className="flex-1">
-                          <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground">
-                            Learn More
-                            <ArrowRight className="w-4 h-4 ml-2" />
-                          </Button>
-                        </Link>
-                      </div>
-                    </div>
-                  </CardContent> */}
-                   <div className="flex gap-2 pt-4 p-4">
-                        <Link href={`/products/${product.id}`} className="flex-1">
-                          <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground">
-                            Learn More
-                            <ArrowRight className="w-4 h-4 ml-2" />
-                          </Button>
-                        </Link>
-                      </div>
-                </Card>
+      <div className="flex gap-2 pt-4">
+        <Link href={`/products/${product.id}`} className="flex-1">
+          <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground">
+            Learn More
+            <ArrowRight className="w-4 h-4 ml-2" />
+          </Button>
+        </Link>
+      </div>
+    </div>
+  </CardContent>
+</Card>
               )
             })}
           </div>

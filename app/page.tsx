@@ -62,91 +62,55 @@ const products = [
     id: "dropline-overdraft",
     title: "Dropline Overdraft",
     description: "Combination of overdraft and term loan with reducing withdrawal limits over time.",
-    icon: Calculator,
-    features: ["Withdrawal Limit Reduces Monthly", "Secured or Unsecured Options", "Interest on Daily Basis", "No Monthly Repayments"],
-    rate: "10.5% onwards",
-    amount: "Up to ₹1 Cr",
-    tenure: "Up to 5 years",
+    
   },
   {
     id: "vendor-financing",
     title: "Vendor Financing",
     description: "Direct financing from sellers to facilitate purchases with flexible payment terms.",
-    icon: Building,
-    features: ["Direct Financing from Vendor", "Deferred Payment Options", "Short-Term Working Capital", "Flexible Terms"],
-    rate: "11.5% onwards",
-    amount: "Up to ₹2 Cr",
-    tenure: "Up to 2 years",
+   
   },
   {
     id: "factoring-limit",
     title: "Factoring Limit",
     description: "Convert your receivables into immediate cash with our factoring services.",
-    icon: CreditCard,
-    features: ["Improved Cash Flow", "Reduced Administrative Burden", "Quick Finance Arrangement", "No Security Required"],
-    rate: "12.5% onwards",
-    amount: "Up to ₹5 Cr",
-    tenure: "As per invoice terms",
+    
   },
   {
     id: "loan-against-property",
     title: "Loan Against Property",
     description: "Unlock the value of your property with competitive rates and flexible terms.",
-    icon: Home,
-    features: ["Lower Interest Rates", "Higher Loan Amounts", "Flexible Usage", "Long Tenure"],
-    rate: "9.5% onwards",
-    amount: "Up to ₹5 Cr",
-    tenure: "Up to 20 years",
+   
   },
   {
     id: "business-loan",
     title: "Business Loan",
     description: "Fuel your business growth with quick and hassle-free business financing.",
-    icon: Briefcase,
-    features: ["Quick Approval", "Minimal Documentation", "Flexible Repayment", "No Collateral"],
-    rate: "12% onwards",
-    amount: "Up to ₹50 Lakh",
-    tenure: "Up to 5 years",
+   
   },
   {
     id: "personal-loan",
     title: "Personal Loan",
     description: "Meet your personal financial needs with our instant personal loans.",
-    icon: CreditCard,
-    features: ["Instant Approval", "No Collateral", "Flexible EMI", "Quick Disbursal"],
-    rate: "10.5% onwards",
-    amount: "Up to ₹50 Lakh",
-    tenure: "Up to 5 years",
+   
   },
   {
     id: "home-loan",
     title: "Home Loan",
     description: "Make your dream home a reality with our attractive home loan offers.",
-    icon: Home,
-    features: ["Low Interest Rates", "Tax Benefits", "Long Tenure", "Quick Processing"],
-    rate: "8.5% onwards",
-    amount: "Up to ₹10 Cr",
-    tenure: "Up to 30 years",
+   
   },
   {
     id: "working-capital-demand-loan",
     title: "Working Capital Loan",
     description: "Maintain smooth business operations with our working capital solutions.",
-    icon: TrendingUp,
-    features: ["Flexible Credit Limit", "Pay Only for Usage", "Quick Access", "Easy Renewal"],
-    rate: "11% onwards",
-    amount: "Up to ₹2 Cr",
-    tenure: "Up to 3 years",
+    
   },
   {
     id: "used-car-loan",
     title: "Used Car Loan",
     description: "Drive your dream car with our competitive used car financing options.",
-    icon: Car,
-    features: ["Up to 85% Financing", "Quick Approval", "Flexible Tenure", "Minimal Documentation"],
-    rate: "9.75% onwards",
-    amount: "Up to ₹1 Cr",
-    tenure: "Up to 7 years",
+  
   },
 ]
 
@@ -283,7 +247,7 @@ export default function HomePage() {
         {/* Full width background image */}
         <div className="absolute inset-0 z-0">
           <img
-            src="/happy-family-with-financial-advisor-discussing-loa.jpg"
+            src="/happy-family-with-financial-advisor-discussing-loa.png"
             alt="Financial Advisory"
             className="w-full h-full object-cover"
           />
@@ -376,24 +340,57 @@ Penny Farm Finance is your constant companion as you strive to live the best lif
                 </Button>
               </Link>
             </div>
-            <div className="grid grid-cols-2 gap-6" data-aos="aos-fade-right">
-              <Card className="text-center p-6">
-                <div className="text-3xl font-bold text-primary mb-2">60+</div>
-                <div className="text-sm text-muted-foreground">Partner Banks & NBFCs</div>
-              </Card>
-              <Card className="text-center p-6">
-                <div className="text-3xl font-bold text-primary mb-2">500+</div>
-                <div className="text-sm text-muted-foreground">Happy Customers</div>
-              </Card>
-              <Card className="text-center p-6">
-                <div className="text-3xl font-bold text-primary mb-2">150+</div>
-                <div className="text-sm text-muted-foreground">Financial Advisors</div>
-              </Card>
-              <Card className="text-center p-6">
-                <div className="text-3xl font-bold text-primary mb-2">100%</div>
-                <div className="text-sm text-muted-foreground">Satisfaction</div>
-              </Card>
-            </div>
+   <div className="grid grid-cols-2 gap-6" data-aos="aos-fade-right">
+  <Card className="group relative overflow-hidden border-0 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+    <div className="absolute inset-0 bg-gradient-to-br from-[#E6A000]/10 to-[#000058]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+    <div className="relative p-6 text-center">
+      <div className="relative inline-flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-[#E6A000]/10 group-hover:bg-[#E6A000] transition-colors duration-300">
+        <Building className="w-8 h-8 text-[#E6A000] group-hover:text-white transition-colors duration-300" />
+      </div>
+      <div className="text-4xl font-bold text-[#000058] mb-2 group-hover:text-[#E6A000] transition-colors">60+</div>
+      <div className="text-sm text-muted-foreground font-medium">Partner Banks & NBFCs</div>
+      <div className="mt-4 h-1 w-0 bg-[#E6A000] group-hover:w-full transition-all duration-500 mx-auto rounded-full"></div>
+    </div>
+  </Card>
+  
+  <Card className="group relative overflow-hidden border-0 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+    <div className="absolute inset-0 bg-gradient-to-br from-[#000058]/10 to-[#E6A000]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+    <div className="relative p-6 text-center">
+      <div className="relative inline-flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-[#E6A000]/10 group-hover:bg-[#E6A000] transition-colors duration-300">
+        <Users className="w-8 h-8 text-[#E6A000] group-hover:text-white transition-colors duration-300" />
+      </div>
+      <div className="text-4xl font-bold text-[#000058] mb-2 group-hover:text-[#E6A000] transition-colors">500+</div>
+      <div className="text-sm text-muted-foreground font-medium">Happy Customers</div>
+      <div className="mt-4 h-1 w-0 bg-[#E6A000] group-hover:w-full transition-all duration-500 mx-auto rounded-full"></div>
+    </div>
+  </Card>
+  
+   <Card className="group relative overflow-hidden border-0 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+    <div className="absolute inset-0 bg-gradient-to-br from-[#000058]/10 to-[#E6A000]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+    <div className="relative p-6 text-center">
+      <div className="relative inline-flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-[#E6A000]/10 group-hover:bg-[#E6A000] transition-colors duration-300">
+        <Star className="w-8 h-8 text-[#E6A000] group-hover:text-white transition-colors duration-300" />
+      </div>
+      <div className="text-4xl font-bold text-[#000058] mb-2 group-hover:text-[#E6A000] transition-colors">100%</div>
+      <div className="text-sm text-muted-foreground font-medium">Satisfaction</div>
+      <div className="mt-4 h-1 w-0 bg-[#E6A000] group-hover:w-full transition-all duration-500 mx-auto rounded-full"></div>
+    </div>
+  </Card>
+
+  <Card className="group relative overflow-hidden border-0 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+    <div className="absolute inset-0 bg-gradient-to-br from-[#E6A000]/10 to-[#000058]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+    <div className="relative p-6 text-center">
+      <div className="relative inline-flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-[#E6A000]/10 group-hover:bg-[#E6A000] transition-colors duration-300">
+        <Award className="w-8 h-8 text-[#E6A000] group-hover:text-white transition-colors duration-300" />
+      </div>
+      <div className="text-4xl font-bold text-[#000058] mb-2 group-hover:text-[#E6A000] transition-colors">150+</div>
+      <div className="text-sm text-muted-foreground font-medium">Financial Advisors</div>
+      <div className="mt-4 h-1 w-0 bg-[#E6A000] group-hover:w-full transition-all duration-500 mx-auto rounded-full"></div>
+    </div>
+  </Card>
+  
+ 
+</div>
           </div>
         </div>
       </section>
@@ -441,60 +438,62 @@ Penny Farm Finance is your constant companion as you strive to live the best lif
               const Icon = product.icon
               return (
                 <Card
-                  key={product.id}
-                  className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-border/50 hover:border-primary/50"
-                  data-aos="aos-zoom-in"
-                >
-                  <CardHeader>
-                    <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
-                      <Icon className="w-6 h-6" />
-                    </div>
-                    <CardTitle className="text-xl">{product.title}</CardTitle>
-                    <CardDescription className="text-muted-foreground">{product.description}</CardDescription>
-                  </CardHeader>
-                  {/* <CardContent>
-                    <div className="space-y-4">
-                      <div className="grid grid-cols-3 gap-2 text-sm">
-                        <div>
-                          <div className="text-muted-foreground">Rate</div>
-                          <div className="font-semibold text-primary">{product.rate}</div>
-                        </div>
-                        <div>
-                          <div className="text-muted-foreground">Amount</div>
-                          <div className="font-semibold">{product.amount}</div>
-                        </div>
-                        <div>
-                          <div className="text-muted-foreground">Tenure</div>
-                          <div className="font-semibold">{product.tenure}</div>
-                        </div>
-                      </div>
+  key={product.id}
+  className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-border/50 hover:border-primary/50 overflow-hidden"
+  data-aos="aos-zoom-in"
+>
+  <div className="relative h-48 overflow-hidden">
+    <img
+      src={`https://i.pinimg.com/736x/6e/41/96/6e41964d78cdbcef18bad362eb2917da.jpg`} // Aap yahan appropriate image path use karein
+      alt={product.title}
+      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+    />
+    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+    <div className="absolute bottom-4 left-4 right-4">
+    
+      <h3 className="text-xl font-bold text-white">{product.title}</h3>
+    </div>
+  </div>
+  <CardHeader className="pt-4">
+    <CardDescription className="text-muted-foreground">{product.description}</CardDescription>
+  </CardHeader>
+  <CardContent>
+    <div className="space-y-4">
+      {/* <div className="grid grid-cols-3 gap-2 text-sm">
+        <div>
+          <div className="text-muted-foreground">Rate</div>
+          <div className="font-semibold text-primary">{product.rate}</div>
+        </div>
+        <div>
+          <div className="text-muted-foreground">Amount</div>
+          <div className="font-semibold">{product.amount}</div>
+        </div>
+        <div>
+          <div className="text-muted-foreground">Tenure</div>
+          <div className="font-semibold">{product.tenure}</div>
+        </div>
+      </div> */}
 
-                      <div className="space-y-2">
-                        {product.features.map((feature, idx) => (
-                          <div key={idx} className="flex items-center text-sm">
-                            <CheckCircle className="w-4 h-4 text-green-500 mr-2 flex-shrink-0" />
-                            {feature}
-                          </div>
-                        ))}
-                      </div>
+      {/* <div className="space-y-2">
+        {product.features.slice(0, 3).map((feature, idx) => (
+          <div key={idx} className="flex items-center text-sm">
+            <CheckCircle className="w-4 h-4 text-green-500 mr-2 flex-shrink-0" />
+            {feature}
+          </div>
+        ))}
+      </div> */}
 
-                      <Link href={`/products/${product.id}`}>
-                        <Button className="w-full mt-4 bg-primary hover:bg-primary/90 text-primary-foreground">
-                          Learn More
-                          <ArrowRight className="w-4 h-4 ml-2" />
-                        </Button>
-                      </Link>
-                    </div>
-                  </CardContent> */}
-                       <div className="flex gap-2 pt-4 p-4">
-                        <Link href={`/products/${product.id}`} className="flex-1">
-                          <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground">
-                            Learn More
-                            <ArrowRight className="w-4 h-4 ml-2" />
-                          </Button>
-                        </Link>
-                      </div>
-                </Card>
+      <div className="flex gap-2 pt-4">
+        <Link href={`/products/${product.id}`} className="flex-1">
+          <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground">
+            Learn More
+            <ArrowRight className="w-4 h-4 ml-2" />
+          </Button>
+        </Link>
+      </div>
+    </div>
+  </CardContent>
+</Card>
               )
             })}
           </div>
