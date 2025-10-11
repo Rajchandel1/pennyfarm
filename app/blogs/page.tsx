@@ -7,6 +7,7 @@ import { Phone, MessageCircle, Calculator, ArrowRight, PiggyBank, X, Menu, Clock
 import Link from "next/link"
 import { useState } from "react"
 import Header from "../header/page"
+import Footer from "@/app/footer/page"
 
 const allBlogs = [
   {
@@ -194,71 +195,7 @@ export default function BlogsPage() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="bg-foreground text-background py-16">
-        <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-4 gap-8">
-            <div>
-              <div className="flex items-center space-x-2 mb-4">
-                <img
-                  src="/images/pennyfarm-logo.png"
-                  alt="Penny Farm Finance Logo"
-                  className="h-8 w-auto"
-                />
-                <span className="text-xl font-bold">Penny Farm Finance</span>
-              </div>
-              <p className="text-background/70 mb-4">
-                Your trusted partner for all financial needs. We provide quick, reliable, and affordable loan solutions.
-              </p>
-            </div>
-
-            <div>
-              <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
-              <ul className="space-y-2 text-background/70">
-                <li>
-                  <Link href="/" className="hover:text-primary transition-colors">
-                    Home
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/about" className="hover:text-primary transition-colors">
-                    About Us
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/products" className="hover:text-primary transition-colors">
-                    Products
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/blogs" className="hover:text-primary transition-colors">
-                    Blogs
-                  </Link>
-                </li>
-              </ul>
-            </div>
-
-            <div>
-              <h3 className="text-lg font-semibold mb-4">Information</h3>
-              <div className="space-y-2 text-background/70">
-                <p>📞 +91 96649 82919</p>
-                <p>✉️ pennyfarmfinance@gmail.com</p>
-              </div>
-            </div>
-
-            <div>
-              <h3 className="text-lg font-semibold mb-4">Address</h3>
-              <p className="text-background/70">
-                623, Dev Atelier, 100 Feet Anand Nagar Rd, Prahlad Nagar, Ahmedabad, Gujarat 380015
-              </p>
-            </div>
-          </div>
-
-          <div className="border-t border-background/20 mt-12 pt-8 text-center text-background/70">
-            <p>&copy; 2024 * 2025 © All Right Reserved Penny Farm Finance</p>
-          </div>
-        </div>
-      </footer>
+     <Footer />
 
       {/* EMI Calculator Modal */}
       {showEMICalculator && (

@@ -2,22 +2,19 @@
 
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+
 import {
   Phone,
   MessageCircle,
   Calculator,
-   X,
+  X,
   PiggyBank,
   Menu,
+  TrendingUp,
+
 } from "lucide-react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const Header = () => {
     const [interestRate, setInterestRate] = useState(10);
@@ -159,7 +156,7 @@ const Header = () => {
                   href="/products"
                   className="text-foreground hover:text-primary transition-colors"
                 >
-                  Products
+                  Services
                 </Link>
                 <button
                   onClick={() => {
@@ -206,85 +203,182 @@ const Header = () => {
           )}
         </div>
       </header>
-      {showEMICalculator && (
-        <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4">
-          <Card className="w-full max-w-md max-h-[90vh] overflow-y-auto">
-            <CardHeader className="flex flex-row items-center justify-between">
-              <CardTitle>EMI Calculator</CardTitle>
-              <Button
-                variant="ghost"
-                size="sm"
-                onClick={() => setShowEMICalculator(false)}
-              >
-                <X className="w-4 h-4" />
-              </Button>
-            </CardHeader>
-            <CardContent className="space-y-4">
-              <div>
-                <label className="text-sm font-medium">Loan Amount (₹)</label>
-                <input
-                  type="number"
-                  value={loanAmount}
-                  onChange={(e) => setLoanAmount(Number(e.target.value))}
-                  className="w-full mt-1 px-3 py-2 border border-border rounded-md text-base"
-                />
-              </div>
-
-              <div>
-                <label className="text-sm font-medium">Interest Rate (%)</label>
-                <input
-                  type="number"
-                  step="0.1"
-                  value={interestRate}
-                  onChange={(e) => setInterestRate(Number(e.target.value))}
-                  className="w-full mt-1 px-3 py-2 border border-border rounded-md text-base"
-                />
-              </div>
-
-              <div>
-                <label className="text-sm font-medium">Tenure</label>
-                <div className="flex gap-2 mt-1">
-                  <input
-                    type="number"
-                    value={tenure}
-                    onChange={(e) => setTenure(Number(e.target.value))}
-                    className="flex-1 px-3 py-2 border border-border rounded-md text-base"
-                  />
-                  <select
-                    value={tenureType}
-                    onChange={(e) => setTenureType(e.target.value)}
-                    className="px-3 py-2 border border-border rounded-md text-base"
-                  >
-                    <option value="months">Months</option>
-                    <option value="years">Years</option>
-                  </select>
-                </div>
-              </div>
-
-              <div className="space-y-2 pt-4 border-t border-border">
-                <div className="flex justify-between">
-                  <span>EMI:</span>
-                  <span className="font-semibold text-primary">
-                    ₹{emi.toLocaleString()} INR
-                  </span>
-                </div>
-                <div className="flex justify-between">
-                  <span>Total Interest Payable:</span>
-                  <span className="font-semibold">
-                    ₹{totalInterest.toLocaleString()} INR
-                  </span>
-                </div>
-                <div className="flex justify-between">
-                  <span>Total of Payments:</span>
-                  <span className="font-semibold">
-                    ₹{totalAmount.toLocaleString()} INR
-                  </span>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
+     {/* Enhanced EMI Calculator Modal */}
+{showEMICalculator && (
+  <div className="scrollbar-hide fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4" >
+    <div className="bg-white rounded-xl max-w-md w-full max-h-[90vh] overflow-y-auto shadow-2xl">
+      <div className="relative p-6 border-b bg-gradient-to-r from-[#E6A000] to-[#E6A001]/80">
+        <div className="absolute top-4 right-4">
+          <Button
+            variant="ghost"
+            size="icon"
+            onClick={() => setShowEMICalculator(false)}
+            className="text-white hover:bg-white/20"
+          >
+            <X className="h-5 w-5" />
+          </Button>
         </div>
-      )}
+        <div className="flex items-center space-x-3">
+          <div className="w-12 h-12 bg-[#E6A000]/20 rounded-lg flex items-center justify-center">
+            <Calculator className="w-6 h-6 text-[#E6A000]" />
+          </div>
+          <div>
+            <h2 className="text-2xl font-bold text-white">EMI Calculator</h2>
+            <p className="text-sm text-white/80">Calculate your monthly EMI</p>
+          </div>
+        </div>
+      </div>
+
+      <div className="p-6 space-y-6">
+        <div className="space-y-2">
+          <label className="text-sm font-medium text-[#000058]">Loan Amount (₹)</label>
+          <div className="relative">
+            <input
+              type="number"
+              value={loanAmount}
+              onChange={(e) => setLoanAmount(Number(e.target.value))}
+              className="w-full px-3 py-2 pr-12 border border-[#E6A000]/30 rounded-md focus:border-[#E6A000] focus:outline-none"
+            />
+            <span className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-500">₹</span>
+          </div>
+          <div className="flex justify-between text-xs text-gray-500">
+            <span>1 Lac</span>
+            <span>1 Cr</span>
+          </div>
+          <input
+            type="range"
+            min="100000"
+            max="10000000"
+            step="100000"
+            value={loanAmount}
+            onChange={(e) => setLoanAmount(Number(e.target.value))}
+            className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer"
+            style={{
+              background: `linear-gradient(to right, #E6A000 0%, #E6A000 ${((loanAmount - 100000) / (10000000 - 100000)) * 100}%, #e5e7eb ${((loanAmount - 100000) / (10000000 - 100000)) * 100}%, #e5e7eb 100%)`
+            }}
+          />
+        </div>
+
+        <div className="space-y-2">
+          <label className="text-sm font-medium text-[#000058]">Interest Rate (%)</label>
+          <div className="relative">
+            <input
+              type="number"
+              step="0.1"
+              value={interestRate}
+              onChange={(e) => setInterestRate(Number(e.target.value))}
+              className="w-full px-3 py-2 pr-8 border border-[#E6A000]/30 rounded-md focus:border-[#E6A000] focus:outline-none"
+            />
+            <span className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-500">%</span>
+          </div>
+          <div className="flex justify-between text-xs text-gray-500">
+            <span>5%</span>
+            <span>20%</span>
+          </div>
+          <input
+            type="range"
+            min="5"
+            max="20"
+            step="0.1"
+            value={interestRate}
+            onChange={(e) => setInterestRate(Number(e.target.value))}
+            className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer"
+            style={{
+              background: `linear-gradient(to right, #E6A000 0%, #E6A000 ${((interestRate - 5) / (20 - 5)) * 100}%, #e5e7eb ${((interestRate - 5) / (20 - 5)) * 100}%, #e5e7eb 100%)`
+            }}
+          />
+        </div>
+
+        <div className="space-y-2">
+          <label className="text-sm font-medium text-[#000058]">Loan Tenure</label>
+          <div className="flex gap-2">
+            <input
+              type="number"
+              value={tenure}
+              onChange={(e) => setTenure(Number(e.target.value))}
+              className="flex-1 px-3 py-2 border border-[#E6A000]/30 rounded-md focus:border-[#E6A000] focus:outline-none"
+            />
+            <select
+              value={tenureType}
+              onChange={(e) => setTenureType(e.target.value)}
+              className="px-3 py-2 border border-[#E6A000]/30 rounded-md focus:border-[#E6A000] focus:outline-none"
+            >
+              <option value="months">Months</option>
+              <option value="years">Years</option>
+            </select>
+          </div>
+          <div className="flex justify-between text-xs text-gray-500">
+            <span>1 {tenureType === "months" ? "Month" : "Year"}</span>
+            <span>{tenureType === "months" ? "36 Months" : "30 Years"}</span>
+          </div>
+          <input
+            type="range"
+            min="1"
+            max={tenureType === "months" ? "36" : "30"}
+            step="1"
+            value={tenure}
+            onChange={(e) => setTenure(Number(e.target.value))}
+            className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer"
+            style={{
+              background: `linear-gradient(to right, #E6A000 0%, #E6A000 ${((tenure - 1) / ((tenureType === "months" ? 36 : 30) - 1)) * 100}%, #e5e7eb ${((tenure - 1) / ((tenureType === "months" ? 36 : 30) - 1)) * 100}%, #e5e7eb 100%)`
+            }}
+          />
+        </div>
+
+        <div className="bg-gradient-to-r from-[#000058]/5 to-[#E6A000]/5 p-4 rounded-lg space-y-3">
+          <div className="flex justify-between items-center">
+            <span className="text-sm text-gray-600">Monthly EMI:</span>
+            <span className="text-xl font-bold text-[#000058]">₹{emi.toLocaleString()}</span>
+          </div>
+          <div className="flex justify-between items-center">
+            <span className="text-sm text-gray-600">Total Interest:</span>
+            <span className="text-lg font-semibold text-[#E6A000]">₹{totalInterest.toLocaleString()}</span>
+          </div>
+          <div className="flex justify-between items-center pt-2 border-t">
+            <span className="text-sm text-gray-600">Total Amount:</span>
+            <span className="text-lg font-semibold text-[#000058]">₹{totalAmount.toLocaleString()}</span>
+          </div>
+        </div>
+
+        <div className="grid grid-cols-3 gap-2">
+          <div className="text-center p-2 bg-[#E6A000]/10 rounded-lg">
+            <TrendingUp className="w-5 h-5 text-[#E6A000] mx-auto mb-1" />
+            <div className="text-xs text-gray-600">Low Interest</div>
+            <div className="text-sm font-bold text-[#000058]">8.5%+</div>
+          </div>
+          <div className="text-center p-2 bg-[#E6A000]/10 rounded-lg">
+            <PiggyBank className="w-5 h-5 text-[#E6A000] mx-auto mb-1" />
+            <div className="text-xs text-gray-600">Quick Approval</div>
+            <div className="text-sm font-bold text-[#000058]">24-48h</div>
+          </div>
+          <div className="text-center p-2 bg-[#E6A000]/10 rounded-lg">
+            <Calculator className="w-5 h-5 text-[#E6A000] mx-auto mb-1" />
+            <div className="text-xs text-gray-600">EMI Options</div>
+            <div className="text-sm font-bold text-[#000058]">Flexible</div>
+          </div>
+        </div>
+
+        <div className="flex gap-3 pt-2">
+          <Button
+            className="flex-1 bg-[#E6A000] hover:bg-[#E6A000]/90 text-white"
+            onClick={() => window.open('tel:+919664982919', '_self')}
+          >
+            <Phone className="w-4 h-4 mr-2" />
+            Call Expert
+          </Button>
+          <Button
+            variant="outline"
+            className="flex-1 border-green-500 text-green-500 hover:bg-green-500 hover:text-white"
+            onClick={() => window.open('https://wa.me/919664982919', '_blank')}
+          >
+            <MessageCircle className="w-4 h-4 mr-2" />
+            WhatsApp
+          </Button>
+        </div>
+      </div>
+    </div>
+  </div>
+)}
     </>
   );
 };
