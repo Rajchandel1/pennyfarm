@@ -295,7 +295,7 @@ export default function HomePage() {
         
         {/* Description with Animation */}
         <p className="text-xl lg:text-2xl text-white/90 mb-8 text-pretty drop-shadow-md max-w-2xl animate-fade-in-up" style={{ animationDelay: '0.6s' }}>
-          Get instant approvals, competitive rates, and personalized financial solutions. Join over 50,000+ satisfied customers who trust us with their financial needs.
+          Get instant approvals, competitive rates, and personalized financial solutions. Join over 500+ satisfied customers who trust us with their financial needs.
         </p>
         
         {/* CTA Buttons with Animation */}
@@ -325,7 +325,7 @@ export default function HomePage() {
         <div className="mt-12 animate-fade-in-up" style={{ animationDelay: '1s' }}>
           <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6">
             <div className="flex -space-x-2 sm:-space-x-3">
-              {[1, 2, 3, 4].map((num) => (
+              {[70, 51, 4068, "b"].map((num) => (
                 <div
                   key={num}
                   className="w-10 h-10 sm:w-12 sm:h-12 rounded-full border-2 sm:border-4 border-white/50 overflow-hidden ring-1 sm:ring-2 ring-white/30 hover-scale transform transition-all duration-300 hover:scale-110 hover:z-10"
