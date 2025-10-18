@@ -61,55 +61,63 @@ const useAOS = () => {
 const products = [
   {
     id: "dropline-overdraft",
-     image: "https://img.freepik.com/free-vector/hand-drawn-payday-illustration_23-2151041426.jpg",
+     image: "/images/dropline od.png",
     title: "Dropline Overdraft",
     description: "Combination of overdraft and term loan with reducing withdrawal limits over time.",
     
   },
   {
     id: "vendor-financing",
+    image:"/images/vendor financing.png",
     title: "Vendor Financing",
     description: "Direct financing from sellers to facilitate purchases with flexible payment terms.",
    
   },
   {
     id: "factoring-limit",
+    image: "images/factoring limit.png",
     title: "Factoring Limit",
     description: "Convert your receivables into immediate cash with our factoring services.",
     
   },
   {
     id: "loan-against-property",
+    image: "images/lop.png",
     title: "Loan Against Property",
     description: "Unlock the value of your property with competitive rates and flexible terms.",
    
   },
   {
     id: "business-loan",
+    image: "images/business loan.png",
     title: "Business Loan",
     description: "Fuel your business growth with quick and hassle-free business financing.",
    
   },
   {
     id: "personal-loan",
+    image: "images/personal loan.png",
     title: "Personal Loan",
     description: "Meet your personal financial needs with our instant personal loans.",
    
   },
   {
     id: "home-loan",
+    image: "images/home loan.png",
     title: "Home Loan",
     description: "Make your dream home a reality with our attractive home loan offers.",
    
   },
   {
     id: "working-capital-demand-loan",
+    image: "images/wcl.png",
     title: "Working Capital Loan",
     description: "Maintain smooth business operations with our working capital solutions.",
     
   },
   {
     id: "used-car-loan",
+    image: "images/ucl.png",
     title: "Used Car Loan",
     description: "Drive your dream car with our competitive used car financing options.",
   
@@ -955,8 +963,9 @@ Penny Farm Finance is your constant companion as you strive to live the best lif
         <h3 className="text-xl font-semibold">Visit Our Office</h3>
       </div>
       <div className="h-64 md:h-96 bg-gray-200 relative">
+        
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.2870796605343!2d72.51169897514028!3d23.01322922918029!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e9b2bd5454f97%3A0x3fd23a20b85b1c7f!2sDEV%20Atelier!5e0!3m2!1sen!2sin!4v1760186542453!5m2!1sen!2sin"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d470053.97147952305!2d71.90441618906252!3d23.012877600000007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e9b2bd5454f97%3A0x3fd23a20b85b1c7f!2sDEV%20Atelier!5e0!3m2!1sen!2sin!4v1760790326564!5m2!1sen!2sin"
           width="100%"
           height="100%"
           style={{ border: 0 }}
