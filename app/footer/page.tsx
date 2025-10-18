@@ -14,7 +14,7 @@ const Footer = ({ scrollToContact }: FooterProps) => {
    <>
     <footer className="bg-foreground text-background py-16">
       <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-3 gap-8">
           <div>
             <div className="flex items-center space-x-2 mb-4">
               <img
@@ -74,7 +74,7 @@ const Footer = ({ scrollToContact }: FooterProps) => {
             </ul>
           </div>
 
-          <div>
+          {/* <div>
             <h3 className="text-lg font-semibold mb-4">Services</h3>
             <ul className="space-y-2 text-background/70">
               <li>
@@ -98,7 +98,7 @@ const Footer = ({ scrollToContact }: FooterProps) => {
                 </Link>
               </li>
             </ul>
-          </div>
+          </div> */}
 
           <div>
             <h3 className="text-lg font-semibold mb-4">Contact Info</h3>
