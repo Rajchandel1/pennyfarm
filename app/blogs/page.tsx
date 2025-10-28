@@ -12,64 +12,34 @@ import Footer from "@/app/footer/page"
 const allBlogs = [
   {
     id: 1,
-    title: "5 Tips to Improve Your Credit Score",
-    excerpt: "Learn effective strategies to boost your credit score and get better loan terms.",
-    date: "2024-01-15",
+    title: "Top 5 Benefits of a Business Loan for Growing Companies",
+    excerpt: `Running a business requires steady cash flow — for expansion, equipment, or daily operations. PennyFarm Finance offers fast and flexible business loans to fuel your growth and turn your vision into reality.`,
+    date: "27-10-2025",
     readTime: "5 min read",
-    image: "/credit-score-improvement-tips.jpg",
+    image: "/images/blog1.png",
     author: "Financial Expert",
     category: "Credit Score",
   },
   {
     id: 2,
-    title: "Home Loan vs Rent: Making the Right Choice",
-    excerpt: "Compare the benefits of buying vs renting to make an informed decision.",
-    date: "2024-01-10",
+    title: "Top 10 Tips to Improve Your CIBIL Score Before Applying for a Loan",
+    excerpt: "Want quick loan approval? Learn the top 10 tips to improve your CIBIL score fast. Boost your credit health, increase eligibility, and get better loan offers with smart financial habits.",
+    date: "27-10-2025",
     readTime: "7 min read",
-    image: "/home-loan-vs-rent-comparison.jpg",
+    image: "/images/blog2.png",
     author: "Property Advisor",
     category: "Home Loans",
   },
   {
     id: 3,
-    title: "Business Loan Guide for Startups",
-    excerpt: "Everything you need to know about securing funding for your startup.",
-    date: "2024-01-05",
+    title: "Top 7 Benefits of Unsecured Finance for Your Business",
+    excerpt: "Discover the benefits of unsecured business finance and how it can fuel your growth. Learn how unsecured loans offer quick approvals, and hassle-free funding to keep your business moving forward.",
+    date: "27-10-2025",
     readTime: "6 min read",
-    image: "/startup-business-loan-guide.jpg",
+    image: "/images/blog3.png",
     author: "Business Consultant",
     category: "Business Loans",
-  },
-  {
-    id: 4,
-    title: "Understanding Personal Loan Interest Rates",
-    excerpt: "A comprehensive guide to personal loan interest rates and how they're calculated.",
-    date: "2024-01-01",
-    readTime: "4 min read",
-    image: "/personal-loan-interest-rates.jpg",
-    author: "Finance Advisor",
-    category: "Personal Loans",
-  },
-  {
-    id: 5,
-    title: "Tax Benefits on Home Loans in 2024",
-    excerpt: "Maximize your tax savings with these home loan tax benefits and deductions.",
-    date: "2023-12-28",
-    readTime: "8 min read",
-    image: "/tax-benefits-home-loan.jpg",
-    author: "Tax Expert",
-    category: "Home Loans",
-  },
-  {
-    id: 6,
-    title: "Working Capital Management for Small Businesses",
-    excerpt: "Essential strategies for managing working capital effectively in your business.",
-    date: "2023-12-25",
-    readTime: "6 min read",
-    image: "/working-capital-management.jpg",
-    author: "Business Advisor",
-    category: "Business Loans",
-  },
+  }
 ]
 
 export default function BlogsPage() {
@@ -137,9 +107,7 @@ export default function BlogsPage() {
                 </div>
                 <CardHeader>
                   <div className="flex items-center justify-between text-sm text-muted-foreground mb-2">
-                    <Badge variant="secondary" className="text-xs">
-                      {blog.category}
-                    </Badge>
+                    <span className="text-sm text-muted-foreground">{blog.date}</span>
                     <div className="flex items-center space-x-2">
                       <Clock className="w-3 h-3" />
                       <span>{blog.readTime}</span>
@@ -153,15 +121,16 @@ export default function BlogsPage() {
                 <CardContent>
                   <div className="flex items-center justify-between">
                     <div className="flex items-center text-sm text-muted-foreground">
-                      <User className="w-4 h-4 mr-1" />
-                      <span>{blog.author}</span>
+                      {/* <User className="w-4 h-4 mr-1" />
+                      <span>{blog.author}</span> */}
                     </div>
-                    <span className="text-sm text-muted-foreground">{blog.date}</span>
                   </div>
-                  <Button variant="ghost" className="p-0 h-auto text-primary hover:text-primary/80 mt-4">
-                    Read More
-                    <ArrowRight className="w-4 h-4 ml-2" />
-                  </Button>
+                  <Link href={`/blogs/${blog.id}`}>
+                    <Button variant="ghost" className="border-primary text-primary hover:bg-primary/10 hover:text-primary-foreground bg-transparent">
+                      Read More
+                      <ArrowRight className="w-4 h-4 ml-2" />
+                    </Button>
+                  </Link>
                 </CardContent>
               </Card>
             ))}

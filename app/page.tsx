@@ -153,25 +153,25 @@ const faqs = [
 
 const blogs = [
   {
-    title: "5 Tips to Improve Your Credit Score",
-    excerpt: "Learn effective strategies to boost your credit score and get better loan terms.",
-    date: "2024-01-15",
+    title: "Top 5 Benefits of a Business Loan for Growing Companies",
+    excerpt: `Running a business requires steady cash flow — for expansion, equipment, or daily operations. PennyFarm Finance offers fast and flexible business loans to fuel your growth and turn your vision into reality.`,
+    date: "27-10-2025",
     readTime: "5 min read",
-    image: "/credit-score-improvement-tips.jpg",
+    image: "/images/blog1.png",
   },
   {
-    title: "Home Loan vs Rent: Making the Right Choice",
-    excerpt: "Compare the benefits of buying vs renting to make an informed decision.",
-    date: "2024-01-10",
+    title: "Top 10 Tips to Improve Your CIBIL Score Before Applying for a Loan",
+    excerpt: "Want quick loan approval? Learn the top 10 tips to improve your CIBIL score fast. Boost your credit health, increase eligibility, and get better loan offers with smart financial habits.",
+    date: "27-10-2025",
     readTime: "7 min read",
-    image: "/home-loan-vs-rent-comparison.jpg",
+    image: "/images/blog2.png",
   },
   {
-    title: "Business Loan Guide for Startups",
-    excerpt: "Everything you need to know about securing funding for your startup.",
-    date: "2024-01-05",
+    title: "Top 7 Benefits of Unsecured Finance for Your Business",
+    excerpt: "Discover the benefits of unsecured business finance and how it can fuel your growth. Learn how unsecured loans offer quick approvals, and hassle-free funding to keep your business moving forward.",
+    date: "27-10-2025",
     readTime: "6 min read",
-    image: "/startup-business-loan-guide.jpg",
+    image: "/images/blog3.png",
   },
 ]
 
@@ -793,7 +793,7 @@ Penny Farm Finance is your constant companion as you strive to live the best lif
                   <CardDescription>{blog.excerpt}</CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <Button variant="ghost" className="p-0 h-auto text-primary hover:text-primary/80">
+                  <Button variant="ghost" className="border-primary text-primary hover:bg-primary/10 hover:text-primary-foreground bg-transparent">
                     Read More
                     <ArrowRight className="w-4 h-4 ml-2" />
                   </Button>
@@ -807,7 +807,7 @@ Penny Farm Finance is your constant companion as you strive to live the best lif
               <Button
                 size="lg"
                 variant="outline"
-                className="border-primary text-primary hover:bg-primary hover:text-primary-foreground bg-transparent"
+                className="border-primary text-primary hover:bg-primary/10 hover:text-primary-foreground bg-transparent"
               >
                 Explore More Blogs
                 <ArrowRight className="w-5 h-5 ml-2" />

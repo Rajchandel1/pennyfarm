@@ -28,25 +28,28 @@ import Link from "next/link"
 const products = [
   {
     id: "dropline-overdraft",
-    image: "https://img.freepik.com/free-vector/hand-drawn-payday-illustration_23-2151041426.jpg",
+    image: "/images/dropline od.png",
     title: "Dropline Overdraft",
     description: "Combination of overdraft and term loan with reducing withdrawal limits over time.",
    
   },
   {
     id: "vendor-financing",
+    image: "/images/vendor financing.png",
     title: "Vendor Financing",
     description: "Direct financing from sellers to facilitate purchases with flexible payment terms.",
     
   },
   {
     id: "factoring-limit",
+    image: "/images/factoring limit.png",
     title: "Factoring Limit",
     description: "Convert your receivables into immediate cash with our factoring services.",
    
   },
   {
     id: "loan-against-property",
+    image: "/images/lop.png",
     title: "Loan Against Property",
     description:
       "Unlock the value of your property with competitive rates and flexible terms. Perfect for business expansion, education, or personal needs.",
@@ -54,6 +57,7 @@ const products = [
   },
   {
     id: "working-capital-demand-loan",
+    image: "/images/wcdl.png",
     title: "Working Capital Demand Loan",
     description:
       "Maintain optimum working capital with flexible financing options for your business operational needs.",
@@ -61,6 +65,7 @@ const products = [
   },
   {
     id: "bank-guarantee",
+    image: "/images/bank guarantee.png",
     title: "Bank Guarantee",
     description:
       "Secure your business transactions with our reliable bank guarantee services for tenders and contracts.",
@@ -68,6 +73,7 @@ const products = [
   },
   {
     id: "letter-of-credit",
+    image: "/images/letter of credit.png",
     title: "Letter of Credit",
     description:
       "Facilitate international trade with our comprehensive letter of credit services ensuring secure transactions.",
@@ -75,36 +81,42 @@ const products = [
   },
   {
     id: "business-loan",
+    image: "/images/business loan.png",
     title: "Business Loan",
     description: "Fuel your business growth with quick and hassle-free business financing solutions.",
    
   },
   {
     id: "supply-chain-finance",
+    image: "/images/supply chain finance.png",
     title: "Supply Chain Finance",
     description: "Optimize cash flow across your supply chain with early payment solutions for suppliers.",
    
   },
   {
     id: "personal-loan",
+    image: "/images/personal loan.png",
     title: "Personal Loan",
     description: "Meet your personal financial needs with our instant personal loans with minimal documentation.",
    
   },
   {
     id: "home-loan",
+    image: "/images/home loan.png",
     title: "Home Loan",
     description: "Make your dream home a reality with our attractive home loan offers and tax benefits.",
    
   },
   {
     id: "loan-against-securities",
+    image: "/images/loan against securities.png",
     title: "Loan Against Securities",
     description: "Get instant liquidity against your investment portfolio without selling your securities.",
     
   },
   {
     id: "used-car-loan",
+    image: "/images/ucl.png",
     title: "Used Car Loan",
     description: "Drive your dream car with our competitive used car financing options and quick approvals.",
    
