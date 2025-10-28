@@ -205,26 +205,26 @@ const Header = () => {
       </header>
      {/* Enhanced EMI Calculator Modal */}
 {showEMICalculator && (
-  <div className="scrollbar-hide fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4" >
-    <div className="bg-white rounded-xl max-w-md w-full max-h-[90vh] overflow-y-auto shadow-2xl">
-      <div className="relative p-6 border-b bg-gradient-to-r from-[#E6A000] to-[#E6A001]/80">
+  <div className="scrollbar-hide fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-2 sm:p-4" >
+    <div className="bg-white rounded-xl max-w-md w-full max-h-[90vh] overflow-y-auto shadow-2xl mx-auto">
+      <div className="relative p-4 sm:p-6 border-b bg-gradient-to-r from-[#E6A000] to-[#E6A001]/80">
         <div className="absolute top-4 right-4">
           <Button
             variant="ghost"
             size="icon"
             onClick={() => setShowEMICalculator(false)}
-            className="text-white hover:bg-white/20"
+            className="text-white hover:bg-white/20 h-8 w-8 sm:h-10 sm:w-10"
           >
-            <X className="h-5 w-5" />
+            <X className="h-4 w-4 sm:h-5 sm:w-5" />
           </Button>
         </div>
-        <div className="flex items-center space-x-3">
-          <div className="w-12 h-12 bg-[#E6A000]/20 rounded-lg flex items-center justify-center">
-            <Calculator className="w-6 h-6 text-[#E6A000]" />
+        <div className="flex items-center space-x-3 pr-12">
+          <div className="w-10 h-10 sm:w-12 sm:h-12 bg-[#E6A000]/20 rounded-lg flex items-center justify-center flex-shrink-0">
+            <Calculator className="w-5 h-5 sm:w-6 sm:h-6 text-[#E6A000]" />
           </div>
-          <div>
-            <h2 className="text-2xl font-bold text-white">EMI Calculator</h2>
-            <p className="text-sm text-white/80">Calculate your monthly EMI</p>
+          <div className="min-w-0">
+            <h2 className="text-xl sm:text-2xl font-bold text-white truncate">EMI Calculator</h2>
+            <p className="text-xs sm:text-sm text-white/80">Calculate your monthly EMI</p>
           </div>
         </div>
       </div>
@@ -291,7 +291,7 @@ const Header = () => {
 
         <div className="space-y-2">
           <label className="text-sm font-medium text-[#000058]">Loan Tenure</label>
-          <div className="flex gap-2">
+          <div className="flex flex-col sm:flex-row gap-2">
             <input
               type="number"
               value={tenure}
@@ -301,7 +301,7 @@ const Header = () => {
             <select
               value={tenureType}
               onChange={(e) => setTenureType(e.target.value)}
-              className="px-3 py-2 border border-[#E6A000]/30 rounded-md focus:border-[#E6A000] focus:outline-none"
+              className="px-3 py-2 border border-[#E6A000]/30 rounded-md focus:border-[#E6A000] focus:outline-none sm:w-auto w-full"
             >
               <option value="months">Months</option>
               <option value="years">Years</option>
@@ -340,25 +340,25 @@ const Header = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-3 gap-2">
-          <div className="text-center p-2 bg-[#E6A000]/10 rounded-lg">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-2">
+          <div className="text-center p-3 bg-[#E6A000]/10 rounded-lg">
             <TrendingUp className="w-5 h-5 text-[#E6A000] mx-auto mb-1" />
             <div className="text-xs text-gray-600">Low Interest</div>
             <div className="text-sm font-bold text-[#000058]">8.5%+</div>
           </div>
-          <div className="text-center p-2 bg-[#E6A000]/10 rounded-lg">
+          <div className="text-center p-3 bg-[#E6A000]/10 rounded-lg">
             <PiggyBank className="w-5 h-5 text-[#E6A000] mx-auto mb-1" />
             <div className="text-xs text-gray-600">Quick Approval</div>
             <div className="text-sm font-bold text-[#000058]">24-48h</div>
           </div>
-          <div className="text-center p-2 bg-[#E6A000]/10 rounded-lg">
+          <div className="text-center p-3 bg-[#E6A000]/10 rounded-lg sm:col-span-1 col-span-1">
             <Calculator className="w-5 h-5 text-[#E6A000] mx-auto mb-1" />
             <div className="text-xs text-gray-600">EMI Options</div>
             <div className="text-sm font-bold text-[#000058]">Flexible</div>
           </div>
         </div>
 
-        <div className="flex gap-3 pt-2">
+        {/* <div className="flex gap-3 pt-2">
           <Button
             className="flex-1 bg-[#E6A000] hover:bg-[#E6A000]/90 text-white"
             onClick={() => window.open('tel:+919664982919', '_self')}
@@ -374,7 +374,7 @@ const Header = () => {
             <MessageCircle className="w-4 h-4 mr-2" />
             WhatsApp
           </Button>
-        </div>
+        </div> */}
       </div>
     </div>
   </div>
