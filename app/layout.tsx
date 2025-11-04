@@ -12,6 +12,10 @@ export const metadata: Metadata = {
   description:
     "Leading financial services provider offering loans, business finance, and comprehensive financial solutions. Get quick approvals and competitive rates.",
   generator: "v0.app",
+   // Google Search Console verification
+  other: {
+    "google-site-verification": "3yh9sWkgaRgXQvLN1RcAwMwnah8akB4xkfmChL7Zv9o", // 
+  },
 }
 
 export default function RootLayout({
