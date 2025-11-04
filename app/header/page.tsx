@@ -84,10 +84,16 @@ const Header = () => {
                 About us
               </Link>
               <Link
-                href="/products"
+                href="/services"
                 className="text-foreground hover:text-primary transition-colors"
               >
                 Services
+              </Link>
+                <Link
+                href="/blogs"
+                className="text-foreground hover:text-primary transition-colors"
+              >
+                Blogs
               </Link>
               <button
                 onClick={scrollToContact}
