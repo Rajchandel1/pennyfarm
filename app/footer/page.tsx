@@ -120,7 +120,8 @@ const Footer = ({ scrollToContact }: FooterProps) => {
         </div>
 
         <div className="border-t border-background/20 mt-12 pt-8 text-center text-background/70">
-          <p>&copy; 2024 Penny Farm Finance. All rights reserved.</p>
+          <p>&copy; 2025 Penny Farm Finance. All rights reserved.</p>
+          <p>Branded By <b><a href="https://www.inoit.site/"> Inoit </a> </b></p>
         </div>
       </div>
     </footer>
