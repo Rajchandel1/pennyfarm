@@ -207,7 +207,7 @@ export default function ProductsPage() {
       
 
       <div className="flex gap-2 pt-4">
-        <Link href={`/products/${product.id}`} className="flex-1">
+        <Link href={`/services/${product.id}`} className="flex-1">
           <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground">
             Learn More
             <ArrowRight className="w-4 h-4 ml-2" />

@@ -57,7 +57,7 @@ const Footer = ({ scrollToContact }: FooterProps) => {
                 </Link>
               </li>
               <li>
-                <Link href="/products" className="hover:text-primary transition-colors">
+                <Link href="/services" className="hover:text-primary transition-colors">
                   Services
                 </Link>
               </li>

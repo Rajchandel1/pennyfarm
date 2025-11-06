@@ -159,7 +159,7 @@ const Header = () => {
                   About
                 </Link>
                 <Link
-                  href="/products"
+                  href="/services"
                   className="text-foreground hover:text-primary transition-colors"
                 >
                   Services

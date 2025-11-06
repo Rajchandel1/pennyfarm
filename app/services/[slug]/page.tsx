@@ -1373,7 +1373,7 @@ export default function ProductDetailPage() {
       <div className="min-h-screen bg-background flex items-center justify-center">
         <div className="text-center">
           <h1 className="text-2xl font-bold mb-4">Product Not Found</h1>
-          <Link href="/products">
+          <Link href="/services">
             <Button>Back to Services</Button>
           </Link>
         </div>
@@ -1474,7 +1474,7 @@ export default function ProductDetailPage() {
             Home
           </Link>
           <span>/</span>
-          <Link href="/products" className="hover:text-primary">
+          <Link href="/services" className="hover:text-primary">
             Services
           </Link>
           <span>/</span>
