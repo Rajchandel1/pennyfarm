@@ -39,6 +39,28 @@ const allBlogs = [
     image: "/images/blog3.png",
     author: "Business Consultant",
     category: "Business Loans",
+  },
+  // NEW BLOG 4
+  {
+    id: 4,
+    title: "Understanding Working Capital Loans (WCDL) for Business Growth",
+    excerpt: "Running a business smoothly requires more than just a great product or service — it needs consistent cash flow. Discover how WCDL can keep your operations running without interruption.",
+    date: "01-01-2026",
+    readTime: "7 min read",
+    image: "/images/blog4.png",
+    author: "Finance Expert",
+    category: "Working Capital",
+  },
+  // NEW BLOG 5
+  {
+    id: 5,
+    title: "Drop Line Overdraft (DLOD): The Smart Alternative to Traditional Business Loans",
+    excerpt: "Running a business often means dealing with ups and downs in cash flow. Learn why more business owners are choosing DLOD for flexible, cost-effective financing.",
+    date: "01-01-2026",
+    readTime: "5 min read",
+    image: "/images/blog5.png",
+    author: "Credit Analyst",
+    category: "Business Finance",
   }
 ]
 

@@ -140,6 +140,99 @@ const blogContent = {
       <p>Unsecured Finance gives your business the freedom to grow without limitations. With quick disbursal, flexible usage, and no collateral requirement, it's the ideal funding solution for ambitious entrepreneurs looking to expand confidently. At PennyFarm Finance, we specialize in providing customized unsecured loan solutions up to ₹50 Crore with transparent terms and expert support — empowering your business to move forward without financial barriers.</p>
     `,
     tags: ["Unsecured Finance", "Business Loan", "Working Capital"]
+  },
+  // NEW BLOG 4: WCDL
+  4: {
+    id: 4,
+    title: "Understanding Working Capital Loans (WCDL) for Business Growth",
+    excerpt: "Running a business smoothly requires more than just a great product or service — it needs consistent cash flow. Many profitable businesses face short-term financial gaps due to delayed client payments, seasonal expenses, or sudden bulk orders.",
+    date: "01-01-2026",
+    readTime: "7 min read",
+    image: "/images/blog4.png",
+    category: "Working Capital",
+    content: `
+      <p>Running a business smoothly requires more than just a great product or service — it needs consistent cash flow. Many profitable businesses face short-term financial gaps due to delayed client payments, seasonal expenses, or sudden bulk orders.</p>
+      <p>That’s where a Working Capital Demand Loan (WCDL) comes in — a powerful tool designed to keep your business operations running without interruption.</p>
+      <p>At PennyFarm Finance, we help businesses manage their working capital needs quickly and efficiently through customized loan solutions.</p>
+      <p>Let’s understand what a Working Capital Loan is and how it can boost your business growth.</p>
+
+      <h2>What Is a Working Capital Demand Loan (WCDL)?</h2>
+      <p>A Working Capital Loan (WCDL) is a short-term loan provided to businesses to finance their day-to-day operational expenses — such as purchasing raw materials, paying salaries, rent, or managing overhead costs.</p>
+      <p>Unlike term loans, which are used for long-term investments, a WCDL is meant for short-term liquidity needs — ensuring your business runs smoothly even when cash flow is tight.</p>
+
+      <h2>Top Benefits of a Working Capital Loan</h2>
+
+      <h3>1. Maintains Smooth Cash Flow</h3>
+      <p>Cash flow gaps can occur even in successful businesses. A WCDL ensures you always have funds available to meet daily expenses, pay vendors, or handle emergencies — keeping your operations stable.</p>
+
+      <h3>2. Quick Access to Funds</h3>
+      <p>Working Capital Loans are known for fast processing and easy approval. At PennyFarm Finance, we understand time is money for businesses, which is why our WCDL process ensures you get access to funds exactly when you need them most.</p>
+
+      <h3>3. No Collateral Required (in Many Cases)</h3>
+      <p>Depending on your profile, business performance, and creditworthiness, you can get a WCDL without providing any collateral. This makes it especially helpful for small and medium-sized enterprises (SMEs) that need instant liquidity without asset backing.</p>
+
+      <h3>4. Flexible Repayment Options</h3>
+      <p>Repayment structures can be customized based on your cash inflows. Whether it’s monthly, quarterly, or linked to sales cycles, you can choose a repayment plan that aligns with your business flow — avoiding unnecessary pressure on your finances.</p>
+
+      <h3>5. Helps Seize Business Opportunities</h3>
+      <p>Sometimes, great opportunities come unexpectedly — like a bulk order or vendor discount. With a WCDL, you can act fast without worrying about funds, helping your business grow faster and capture market opportunities in time.</p>
+
+      <h3>6. Improves Business Credit Profile</h3>
+      <p>Timely repayment of a WCDL helps you build a strong credit history, improving your future eligibility for larger loans or facilities like overdrafts, project finance, or corporate funding.</p>
+
+      <h3>7. Supports Seasonal and Cyclical Businesses</h3>
+      <p>Businesses that operate in seasonal industries (like retail, textiles, or agriculture) often face fluctuations in demand. A WCDL helps manage these cycles smoothly by providing liquidity during low-demand months and repayment flexibility during high-demand periods.</p>
+
+      <h2>Conclusion</h2>
+      <p>A Working Capital Demand Loan is more than just short-term funding — it’s a financial lifeline that helps your business maintain momentum, seize growth opportunities, and stay competitive.</p>
+      <p>At PennyFarm Finance, we specialize in providing tailor-made WCDL solutions to suit your unique business needs — with flexible terms, quick disbursal, and complete transparency. Keep your business running strong — let’s make your capital work for you.</p>
+    `,
+    tags: ["WCDL", "Working Capital", "Cash Flow"]
+  },
+  // NEW BLOG 5: DLOD
+  5: {
+    id: 5,
+    title: "Drop Line Overdraft (DLOD): The Smart Alternative to Traditional Business Loans",
+    excerpt: "Running a business often means dealing with ups and downs in cash flow. Some months bring in strong revenue, while others may need a little extra push to manage working capital.",
+    date: "01-01-2026",
+    readTime: "5 min read",
+    image: "/images/blog5.png",
+    category: "Business Finance",
+    content: `
+      <p>Running a business often means dealing with ups and downs in cash flow. Some months bring in strong revenue, while others may need a little extra push to manage working capital.</p>
+      <p>That’s where a Drop Line Overdraft (DLOD) comes in — a modern, flexible, and cost-effective solution for smart businesses.</p>
+      <p>Let’s understand why more and more business owners today are choosing DLOD over traditional business loans.</p>
+
+      <h2>What Is a Drop Line Overdraft (DLOD)?</h2>
+      <p>A Drop Line Overdraft is a credit limit offered for a specific tenure, where the available limit reduces (or “drops”) every month or quarter as you repay.</p>
+      <p>Unlike a term loan where you pay EMIs on the full amount, in a DLOD you pay interest only on the amount you actually use — making it a smarter, cheaper financing option.</p>
+
+      <h2>How Does It Work?</h2>
+      <p>For example, if your sanctioned limit is ₹50 lakh for 3 years, you can withdraw funds as and when needed, and as you repay, your available limit keeps reducing.</p>
+      <p>This gives you complete control over your cash flow and borrowing costs.</p>
+
+      <h2>Top Benefits of a Drop Line Overdraft</h2>
+
+      <h3>1. Interest on Usage, Not Limit</h3>
+      <p>You pay interest only on the funds utilized, not on the entire limit. That means you save more every month.</p>
+
+      <h3>2. Flexible Withdrawals and Repayments</h3>
+      <p>No fixed EMI pressure — withdraw when you need funds and repay as per your business inflow.</p>
+
+      <h3>3. Cost-Effective for Working Capital</h3>
+      <p>DLOD is perfect for managing operational costs, vendor payments, or seasonal cash flow gaps.</p>
+
+      <h3>4. Secured Yet Flexible</h3>
+      <p>It’s usually backed by property or business assets — which means lower interest rates than unsecured credit.</p>
+
+      <h3>5. Ideal for MSMEs and Growing Businesses</h3>
+      <p>Whether you’re scaling operations or managing short-term obligations, DLOD keeps your liquidity healthy without overburdening your balance sheet.</p>
+
+      <h2>In a Nutshell</h2>
+      <p>A Drop Line Overdraft gives you the freedom of a revolving credit line with the discipline of a reducing loan limit — a perfect balance of flexibility and responsibility.</p>
+      <p>At PennyFarm Finance, we help businesses choose and structure the right credit solutions to suit their growth needs — from DLOD and WCDL to unsecured funds and project finance.</p>
+    `,
+    tags: ["DLOD", "Overdraft", "Business Finance"]
   }
 }
 
