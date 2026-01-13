@@ -233,6 +233,96 @@ const blogContent = {
       <p>At PennyFarm Finance, we help businesses choose and structure the right credit solutions to suit their growth needs — from DLOD and WCDL to unsecured funds and project finance.</p>
     `,
     tags: ["DLOD", "Overdraft", "Business Finance"]
+  },
+  // NEW BLOG 6: LAP vs Business Loan
+  6: {
+    id: 6,
+    title: "Loan Against Property vs. Business Loan — Which One Works Best for You?",
+    excerpt: "When your business needs funds, the two most common options are Loan Against Property (LAP) and a Business Loan. Both serve the same goal — growth — but the way they help you achieve it is quite different.",
+    date: "01-01-2026",
+    readTime: "6 min read",
+    image: "/images/blog6.png",
+    category: "Comparison",
+    content: `
+      <p>When your business needs funds, the two most common options are Loan Against Property (LAP) and a Business Loan.</p>
+      <p>Both serve the same goal — growth — but the way they help you achieve it is quite different.</p>
+      <p>Let’s explore how each works and which one may be right for you.</p>
+      
+      <h2>Loan Against Property (LAP): Turning Your Assets into Opportunities</h2>
+      <p>Your property isn’t just a place — it’s an asset that can open doors to business growth.</p>
+      <p>With LAP, you can leverage your owned property (residential, commercial, or industrial) to get a high-value loan at competitive interest rates.</p>
+      
+      <p><strong>Key Benefits:</strong></p>
+      <ul>
+        <li><strong>Lower Interest Rates:</strong> Because it’s a secured loan, you enjoy better rates.</li>
+        <li><strong>Higher Loan Amounts:</strong> Based on your property’s value, you can get up to ₹50 Cr or more.</li>
+        <li><strong>Longer Tenure:</strong> Repay comfortably over 10–15 years.</li>
+        <li><strong>Flexible Usage:</strong> Fund your business, consolidate debts, or even meet personal financial needs.</li>
+      </ul>
+      <p><strong>Best For:</strong> Established businesses or individuals who own property and need a large sum for long-term goals.</p>
+      
+      <h2>Business Loan: Quick Capital, No Collateral</h2>
+      <p>If you don’t want to pledge property or need immediate working capital, a Business Loan is the ideal choice.</p>
+      <p>These are unsecured, meaning you get quick access to funds purely based on your financials and credit profile.</p>
+      
+      <p><strong>Key Benefits:</strong></p>
+      <ul>
+        <li><strong>No Collateral Needed:</strong> Ideal for startups or asset-light businesses.</li>
+        <li><strong>Fast Processing:</strong> Quick approval and disbursal.</li>
+        <li><strong>Short Tenure Flexibility:</strong> Perfect for immediate or short-term business needs.</li>
+        <li><strong>Builds Credit History:</strong> Helps improve your business’s financial credibility.</li>
+      </ul>
+      <p><strong>Best For:</strong> Growing companies that value speed, simplicity, and flexibility.</p>
+      
+      <h2>Which One Should You Choose?</h2>
+      <table style="width: 100%; border-collapse: collapse; margin: 1.5rem 0;">
+        <thead>
+          <tr style="background-color: #f3f4f6;">
+            <th style="padding: 12px; border: 1px solid #e5e7eb; text-align: left;">Factor</th>
+            <th style="padding: 12px; border: 1px solid #e5e7eb; text-align: left;">Loan Against Property (LAP)</th>
+            <th style="padding: 12px; border: 1px solid #e5e7eb; text-align: left;">Business Loan</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="padding: 12px; border: 1px solid #e5e7eb;">Collateral</td>
+            <td style="padding: 12px; border: 1px solid #e5e7eb;">Required (property)</td>
+            <td style="padding: 12px; border: 1px solid #e5e7eb;">Not required</td>
+          </tr>
+          <tr>
+            <td style="padding: 12px; border: 1px solid #e5e7eb;">Interest Rate</td>
+            <td style="padding: 12px; border: 1px solid #e5e7eb;">Lower</td>
+            <td style="padding: 12px; border: 1px solid #e5e7eb;">Slightly higher</td>
+          </tr>
+          <tr>
+            <td style="padding: 12px; border: 1px solid #e5e7eb;">Loan Amount</td>
+            <td style="padding: 12px; border: 1px solid #e5e7eb;">Higher</td>
+            <td style="padding: 12px; border: 1px solid #e5e7eb;">Moderate</td>
+          </tr>
+          <tr>
+            <td style="padding: 12px; border: 1px solid #e5e7eb;">Tenure</td>
+            <td style="padding: 12px; border: 1px solid #e5e7eb;">Long-term</td>
+            <td style="padding: 12px; border: 1px solid #e5e7eb;">Short to medium</td>
+          </tr>
+          <tr>
+            <td style="padding: 12px; border: 1px solid #e5e7eb;">Processing Time</td>
+            <td style="padding: 12px; border: 1px solid #e5e7eb;">Moderate</td>
+            <td style="padding: 12px; border: 1px solid #e5e7eb;">Fast</td>
+          </tr>
+          <tr>
+            <td style="padding: 12px; border: 1px solid #e5e7eb;">Best For</td>
+            <td style="padding: 12px; border: 1px solid #e5e7eb;">Long-term expansion</td>
+            <td style="padding: 12px; border: 1px solid #e5e7eb;">Short-term working capital</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>Our Recommendation</h2>
+      <p>If you need a large amount at a lower interest rate, LAP is your go-to.</p>
+      <p>But if you value speed and flexibility, a Business Loan will serve you better.</p>
+      <p>At PennyFarm Finance, we don’t believe in “one-size-fits-all.” Our team studies your business, goals, and repayment capacity to recommend the most effective financing solution — whether secured or unsecured.</p>
+    `,
+    tags: ["LAP", "Business Loan", "Comparison"]
   }
 }
 

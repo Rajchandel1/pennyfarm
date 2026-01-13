@@ -40,7 +40,6 @@ const allBlogs = [
     author: "Business Consultant",
     category: "Business Loans",
   },
-  // NEW BLOG 4
   {
     id: 4,
     title: "Understanding Working Capital Loans (WCDL) for Business Growth",
@@ -51,7 +50,6 @@ const allBlogs = [
     author: "Finance Expert",
     category: "Working Capital",
   },
-  // NEW BLOG 5
   {
     id: 5,
     title: "Drop Line Overdraft (DLOD): The Smart Alternative to Traditional Business Loans",
@@ -61,6 +59,17 @@ const allBlogs = [
     image: "/images/blog5.png",
     author: "Credit Analyst",
     category: "Business Finance",
+  },
+  // NEW BLOG 6
+  {
+    id: 6,
+    title: "Loan Against Property vs. Business Loan — Which One Works Best for You?",
+    excerpt: "When your business needs funds, the two most common options are Loan Against Property (LAP) and a Business Loan. Let’s explore how each works and which one may be right for you.",
+    date: "01-01-2026",
+    readTime: "6 min read",
+    image: "/images/blog6.png",
+    author: "Loan Advisor",
+    category: "Comparison",
   }
 ]
 
