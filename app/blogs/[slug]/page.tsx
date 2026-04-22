@@ -9,6 +9,9 @@ import Link from "next/link"
 import Image from "next/image"
 import { useState } from "react"
 
+// SAME URL jo aapne Contact form ke liye generate ki thi
+const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzJDnDwW3j6vN0s-YDRsZBATDzZ9Wo2zFi_1WuQJBUKNUQagGBsDwVxzuU3TvXjheYi/exec"
+
 // Blog content data
 const blogContent = {
   1: {
@@ -75,7 +78,7 @@ const blogContent = {
       <p>Long-standing credit accounts show a strong credit history. Even if you don't use a particular card much, keeping it active helps maintain the length of your credit history — a positive factor in your score.</p>
       
       <h2>Avoid Settling Loans</h2>
-      <p>If you "settle" a loan for less than the total amount owed, it's marked negatively on your report. Always try to pay the full outstanding amount instead of settling — it keeps your record clean.</p>
+      <p>If you "settle" a loan for less than the total amount owed, it's marked negatively on your report. always try to pay the full outstanding amount instead of settling — it keeps your record clean.</p>
       
       <h2>Limit the Number of Credit Cards</h2>
       <p>Having too many cards can make it harder to manage payments. Stick to 2–3 cards that you can comfortably handle and pay on time every month.</p>
@@ -335,6 +338,11 @@ function getRelatedBlogs(currentBlogId: number) {
 
 export default function BlogDetailPage({ params }: { params: { slug: string } }) {
   const [isBookmarked, setIsBookmarked] = useState(false)
+  
+  // Newsletter State
+  const [newsletterEmail, setNewsletterEmail] = useState("")
+  const [newsletterStatus, setNewsletterStatus] = useState<"idle" | "loading" | "success" | "error">("idle")
+
   const blogId = parseInt(params.slug)
   const blog = blogContent[blogId as keyof typeof blogContent]
   
@@ -361,6 +369,35 @@ export default function BlogDetailPage({ params }: { params: { slug: string } })
   const handleBookmark = () => {
     setIsBookmarked(!isBookmarked)
     // Here you would typically save to localStorage or send to an API
+  }
+  
+  // Newsletter Submit Handler
+  const handleNewsletterSubmit = async (e: React.FormEvent) => {
+    e.preventDefault()
+    setNewsletterStatus("loading")
+
+    const formPayload = new FormData()
+    formPayload.append("formType", "newsletter") 
+    formPayload.append("email", newsletterEmail)
+    // Blog page ke sidebar mein naam lena zaroori nahi tha, isliye sirf email
+
+    try {
+      const response = await fetch(GOOGLE_SCRIPT_URL, {
+        method: "POST",
+        body: formPayload
+      })
+
+      if (response.ok) {
+        setNewsletterStatus("success")
+        setNewsletterEmail("") // Clear input
+        setTimeout(() => setNewsletterStatus("idle"), 3000)
+      } else {
+        setNewsletterStatus("error")
+      }
+    } catch (error) {
+      console.error("Newsletter Error:", error)
+      setNewsletterStatus("error")
+    }
   }
   
   return (
@@ -446,21 +483,38 @@ export default function BlogDetailPage({ params }: { params: { slug: string } })
               
               {/* Sidebar */}
               <div className="lg:col-span-1">
-                {/* Newsletter */}
+                {/* Newsletter Card - Updated with Functionality */}
                 <Card className="mb-8">
                   <CardContent className="p-6">
                     <h3 className="font-bold text-[#000058] mb-4">Subscribe to Newsletter</h3>
                     <p className="text-sm text-muted-foreground mb-4">
                       Get the latest financial tips and insights delivered to your inbox
                     </p>
-                    <input 
-                      type="email" 
-                      placeholder="Your email" 
-                      className="w-full px-3 py-2 border border-[#E6A000]/30 rounded-md focus:border-[#E6A000] focus:outline-none mb-4" 
-                    />
-                    <Button className="w-full bg-[#E6A000] hover:bg-[#E6A000]/90 text-white">
-                      Subscribe
-                    </Button>
+                    <form onSubmit={handleNewsletterSubmit} className="flex flex-col gap-3">
+                      <input 
+                        type="email" 
+                        placeholder="Your email" 
+                        value={newsletterEmail}
+                        onChange={(e) => setNewsletterEmail(e.target.value)}
+                        required
+                        className="w-full px-3 py-2 border border-[#E6A000]/30 rounded-md focus:border-[#E6A000] focus:outline-none" 
+                      />
+                      <Button 
+                        type="submit"
+                        disabled={newsletterStatus === "loading"}
+                        className="w-full bg-[#E6A000] hover:bg-[#E6A000]/90 text-white"
+                      >
+                        {newsletterStatus === "loading" ? "Subscribing..." : "Subscribe"}
+                      </Button>
+                    </form>
+
+                    {/* Success/Error Message inside Card */}
+                    {newsletterStatus === "success" && (
+                      <p className="mt-4 text-sm text-green-600 font-medium">Successfully Subscribed!</p>
+                    )}
+                    {newsletterStatus === "error" && (
+                      <p className="mt-4 text-sm text-red-600 font-medium">Something went wrong.</p>
+                    )}
                   </CardContent>
                 </Card>
                 
@@ -468,7 +522,7 @@ export default function BlogDetailPage({ params }: { params: { slug: string } })
                 {relatedBlogs.length > 0 && (
                   <Card>
                     <CardContent className="p-6">
-                      <h3 className="font-bold text-[#000058] mb-4">Related Posts</h3>
+                      <h3 className="font-bold text-[#000058] mein mb-4">Related Posts</h3>
                       <div className="space-y-4">
                         {relatedBlogs.map((relatedBlog) => (
                           <div key={relatedBlog.id} className="border-b pb-4 last:border-0">
